@@ -1,34 +1,402 @@
 [
   {
-    "id": 101,
-    "de": "das Wetter",
-    "fr": "la météo / le temps",
-    "type": "Nom",
-    "example": "Wie ist das Wetter heute in Berlin?",
-    "score": 1
-  },
-  {
-    "id": 102,
-    "de": "der Müll trennen",
-    "fr": "trier les déchets",
-    "type": "Expression",
-    "example": "In Deutschland trennt man den Müll sehr sorgfältig.",
-    "score": 1
-  },
-  {
-    "id": 103,
+    "id": 1,
     "de": "die Umwelt schützen",
     "fr": "protéger l'environnement",
     "type": "Expression",
-    "example": "Wir müssen die Umwelt für die Zukunft schützen.",
+    "example": "Es ist wichtig, die Umwelt für die nächsten Generationen zu schützen.",
     "score": 1
   },
   {
-    "id": 104,
-    "de": "sparen",
-    "fr": "économiser",
+    "id": 2,
+    "de": "der Klimawandel",
+    "fr": "le changement climatique",
+    "type": "Nom (m)",
+    "example": "Der Klimawandel führt zu immer mehr Extremwetterereignissen.",
+    "score": 1
+  },
+  {
+    "id": 3,
+    "de": "die Erderwärmung",
+    "fr": "le réchauffement climatique",
+    "type": "Nom (f)",
+    "example": "Die globale Erderwärmung muss dringend gebremst werden.",
+    "score": 1
+  },
+  {
+    "id": 4,
+    "de": "der Müll trennen",
+    "fr": "trier les déchets",
+    "type": "Expression",
+    "example": "In Deutschland trennt man den Müll sorgfältig in verschiedene Tonnen.",
+    "score": 1
+  },
+  {
+    "id": 5,
+    "de": "die Mülltrennung",
+    "fr": "le tri sélectif des déchets",
+    "type": "Nom (f)",
+    "example": "Die Mülltrennung hilft beim Recycling von Rohstoffen.",
+    "score": 1
+  },
+  {
+    "id": 6,
+    "de": "der Plastikmüll",
+    "fr": "les déchets plastiques",
+    "type": "Nom (m)",
+    "example": "Wir sollten versuchen, so wenig Plastikmüll wie möglich zu produzieren.",
+    "score": 1
+  },
+  {
+    "id": 7,
+    "de": "das Recycling",
+    "fr": "le recyclage",
+    "type": "Nom (n)",
+    "example": "Durch Recycling werden alte Materialien wiederverwertet.",
+    "score": 1
+  },
+  {
+    "id": 8,
+    "de": "die Mehrwegflasche",
+    "fr": "la bouteille consignée / réutilisable",
+    "type": "Nom (f)",
+    "example": "Getränke in Mehrwegflaschen sind umweltfreundlicher als Einwegflaschen.",
+    "score": 1
+  },
+  {
+    "id": 9,
+    "de": "das Pfand",
+    "fr": "la consigne (sur les bouteilles/canettes)",
+    "type": "Nom (n)",
+    "example": "Vergiss nicht, die Flaschen zurückzugeben und das Pfand abzuholen.",
+    "score": 1
+  },
+  {
+    "id": 10,
+    "de": "Energie sparen",
+    "fr": "économiser de l'énergie",
+    "type": "Expression",
+    "example": "Beim Verlassen des Raumes schalte ich das Licht aus, um Energie zu sparen.",
+    "score": 1
+  },
+  {
+    "id": 11,
+    "de": "der Stromverbrauch",
+    "fr": "la consommation d'électricité",
+    "type": "Nom (m)",
+    "example": "Moderne Geräte helfen dabei, den Stromverbrauch zu senken.",
+    "score": 1
+  },
+  {
+    "id": 12,
+    "de": "die erneuerbaren Energien",
+    "fr": "les énergies renouvelables",
+    "type": "Nom (Pluriel)",
+    "example": "Wind- und Solarenergie sind erneuerbare Energien.",
+    "score": 1
+  },
+  {
+    "id": 13,
+    "de": "das Windrad / die Windkraftanlage",
+    "fr": "l'éolienne",
+    "type": "Nom (n/f)",
+    "example": "In Norddeutschland sieht man viele Windräder auf den Feldern.",
+    "score": 1
+  },
+  {
+    "id": 14,
+    "de": "die Solarzelle / die Photovoltaik",
+    "fr": "le panneau solaire / le photovoltaïque",
+    "type": "Nom (f)",
+    "example": "Viele Hausbesitzer installieren Solarzellen auf dem Dach.",
+    "score": 1
+  },
+  {
+    "id": 15,
+    "de": "die Natur genießen",
+    "fr": "profiter de la nature",
+    "type": "Expression",
+    "example": "Am Wochenende gehe ich im Wald spazieren, um die Natur zu genießen.",
+    "score": 1
+  },
+  {
+    "id": 16,
+    "de": "der Wald / die Wälder",
+    "fr": "la forêt / les forêts",
+    "type": "Nom (m)",
+    "example": "Der Schwarzwald ist ein sehr bekannter Wald in Deutschland.",
+    "score": 1
+  },
+  {
+    "id": 17,
+    "de": "der Baum / die Bäume",
+    "fr": "l'arbre / les arbres",
+    "type": "Nom (m)",
+    "example": "Im Herbst verlieren die Bäume ihre bunten Blätter.",
+    "score": 1
+  },
+  {
+    "id": 18,
+    "de": "pflanzen",
+    "fr": "planter",
     "type": "Verbe",
-    "example": "Man sollte Energie und Wasser sparen.",
+    "example": "Die Schüler pflanzen neue Bäume im Schulgarten.",
+    "score": 1
+  },
+  {
+    "id": 19,
+    "de": "die Wiese",
+    "fr": "le pré / la prairie",
+    "type": "Nom (f)",
+    "example": "Auf der Wiese blühen im Frühling viele bunte Blumen.",
+    "score": 1
+  },
+  {
+    "id": 20,
+    "de": "der Berg / die Berge",
+    "fr": "la montagne / les montagnes",
+    "type": "Nom (m)",
+    "example": "Im Sommer wandern wir gerne in den Alpen auf die Berge.",
+    "score": 1
+  },
+  {
+    "id": 21,
+    "de": "der Fluss / die Flüsse",
+    "fr": "la rivière / le fleuve",
+    "type": "Nom (m)",
+    "example": "Der Rhein ist ein sehr langer Fluss in Europa.",
+    "score": 1
+  },
+  {
+    "id": 22,
+    "de": "der See / die See",
+    "fr": "le lac / la mer",
+    "type": "Nom (m/f)",
+    "example": "Der Bodensee ist ein beliebtes Urlaubsziel.",
+    "score": 1
+  },
+  {
+    "id": 23,
+    "de": "das Meer / der Ozean",
+    "fr": "la mer / l'océan",
+    "type": "Nom (n/m)",
+    "example": "Viele Menschen verbringen ihren Urlaub am Meer.",
+    "score": 1
+  },
+  {
+    "id": 24,
+    "de": "die Küste",
+    "fr": "la côte / le littoral",
+    "type": "Nom (f)",
+    "example": "An der Nordseeküste weht oft ein starker Wind.",
+    "score": 1
+  },
+  {
+    "id": 25,
+    "de": "der Artenschutz",
+    "fr": "la protection des espèces",
+    "type": "Nom (m)",
+    "example": "Der Artenschutz ist wichtig, um seltene Tiere zu retten.",
+    "score": 1
+  },
+  {
+    "id": 26,
+    "de": "vom Aussterben bedroht sein",
+    "fr": "être menacé d'extinction",
+    "type": "Expression",
+    "example": "Viele Tierarten sind heutzutage vom Aussterben bedroht.",
+    "score": 1
+  },
+  {
+    "id": 27,
+    "de": "das Bienensterben",
+    "fr": "la disparition des abeilles",
+    "type": "Nom (n)",
+    "example": "Das Bienensterben bedroht das ökologische Gleichgewicht.",
+    "score": 1
+  },
+  {
+    "id": 28,
+    "de": "biologisch / bio",
+    "fr": "biologique / bio",
+    "type": "Adjectif",
+    "example": "Ich kaufe am liebsten biologische Lebensmittel aus der Region.",
+    "score": 1
+  },
+  {
+    "id": 29,
+    "de": "die Umweltverschmutzung",
+    "fr": "la pollution de l'environnement",
+    "type": "Nom (f)",
+    "example": "Der Autoverkehr ist eine Hauptursache für die Umweltverschmutzung.",
+    "score": 1
+  },
+  {
+    "id": 30,
+    "de": "die Luftverschmutzung",
+    "fr": "la pollution de l'air",
+    "type": "Nom (f)",
+    "example": "In Großstädten ist die Luftverschmutzung oft hoch.",
+    "score": 1
+  },
+  {
+    "id": 31,
+    "de": "das Abgas / die Abgase",
+    "fr": "le gaz d'échappement / les gaz",
+    "type": "Nom (n)",
+    "example": "Elektroautos stoßen keine schädlichen Abgase aus.",
+    "score": 1
+  },
+  {
+    "id": 32,
+    "de": "das Treibhausgas",
+    "fr": "le gaz à effet de serre",
+    "type": "Nom (n)",
+    "example": "Kohlendioxid (CO2) ist das bekannteste Treibhausgas.",
+    "score": 1
+  },
+  {
+    "id": 33,
+    "de": "der CO2-Fußabdruck",
+    "fr": "l'empreinte carbone",
+    "type": "Nom (m)",
+    "example": "Durch Flugreisen vergrößert sich der persönliche CO2-Fußabdruck.",
+    "score": 1
+  },
+  {
+    "id": 34,
+    "de": "nachhaltig",
+    "fr": "durable / éco-responsable",
+    "type": "Adjectif",
+    "example": "Wir müssen eine nachhaltige Lebensweise entwickeln.",
+    "score": 1
+  },
+  {
+    "id": 35,
+    "de": "die Nachhaltigkeit",
+    "fr": "le développement durable / la durabilité",
+    "type": "Nom (f)",
+    "example": "Nachhaltigkeit steht im Mittelpunkt unserer Unternehmenspolitik.",
+    "score": 1
+  },
+  {
+    "id": 36,
+    "de": "umweltfreundlich / umweltschädlich",
+    "fr": "écologique / polluant (nocif pour l'environnement)",
+    "type": "Adjectif",
+    "example": "Das Fahrrad ist ein sehr umweltfreundliches Verkehrsmittel.",
+    "score": 1
+  },
+  {
+    "id": 37,
+    "de": "das Hochwasser / die Überschwemmung",
+    "fr": "la crue / l'inondation",
+    "type": "Nom (n/f)",
+    "example": "Nach dem Starkregen gab es in vielen Orten Hochwasser.",
+    "score": 1
+  },
+  {
+    "id": 38,
+    "de": "die Dürre / die Trockenheit",
+    "fr": "la sécheresse",
+    "type": "Nom (f)",
+    "example": "Lange Dürrephasen schaden den Landwirten und den Ernten.",
+    "score": 1
+  },
+  {
+    "id": 39,
+    "de": "das Unwetter / der Sturm",
+    "fr": "l'intempérie / la tempête",
+    "type": "Nom (n/m)",
+    "example": "Der schwere Sturm hat mehrere Bäume umgestürzt.",
+    "score": 1
+  },
+  {
+    "id": 40,
+    "de": "der Hitzewelle",
+    "fr": "la vague de chaleur / la canicule",
+    "type": "Nom (f)",
+    "example": "Während der Hitzewelle im Sommer sollte man viel Wasser trinken.",
+    "score": 1
+  },
+  {
+    "id": 41,
+    "de": "der Naturschutz",
+    "fr": "la protection de la nature",
+    "type": "Nom (m)",
+    "example": "Das Gebiet steht unter strengem Naturschutz.",
+    "score": 1
+  },
+  {
+    "id": 42,
+    "de": "das Naturschutzgebiet",
+    "fr": "la réserve naturelle",
+    "type": "Nom (n)",
+    "example": "Im Naturschutzgebiet muss man auf den Wegen bleiben.",
+    "score": 1
+  },
+  {
+    "id": 43,
+    "de": "verzichten auf (+ Akk.)",
+    "fr": "renoncer à",
+    "type": "Verbe",
+    "example": "Viele Menschen verzichten der Umwelt zuliebe auf Inlandsflüge.",
+    "score": 1
+  },
+  {
+    "id": 44,
+    "de": "der Rohstoff / die Rohstoffe",
+    "fr": "la matière première / les ressources",
+    "type": "Nom (m)",
+    "example": "Rohstoffe wie Holz und Wasser sind kostbar.",
+    "score": 1
+  },
+  {
+    "id": 45,
+    "de": "die Verschwendung",
+    "fr": "le gaspillage",
+    "type": "Nom (f)",
+    "example": "Die Verschwendung von Lebensmitteln ist ein großes Problem.",
+    "score": 1
+  },
+  {
+    "id": 46,
+    "de": "verschwenden",
+    "fr": "gaspiller",
+    "type": "Verbe",
+    "example": "Wir dürfen nicht so viel Trinkwasser verschwenden.",
+    "score": 1
+  },
+  {
+    "id": 47,
+    "de": "wiederverwenden",
+    "fr": "réutiliser",
+    "type": "Verbe séparable",
+    "example": "Gebrauchte Kartons kann man oft noch einmal wiederverwenden.",
+    "score": 1
+  },
+  {
+    "id": 48,
+    "de": "die Ernte",
+    "fr": "la récolte",
+    "type": "Nom (f)",
+    "example": "Wegen des schlechten Wetters fiel die Ernte geringer aus.",
+    "score": 1
+  },
+  {
+    "id": 49,
+    "de": "der Ökolandbau / die ökologische Landwirtschaft",
+    "fr": "l'agriculture biologique",
+    "type": "Nom (m/f)",
+    "example": "Der Ökolandbau verzichtet auf chemische Pflanzenschutzmittel.",
+    "score": 1
+  },
+  {
+    "id": 50,
+    "de": "das ökologische Gleichgewicht",
+    "fr": "l'équilibre écologique",
+    "type": "Nom (n)",
+    "example": "Wir müssen das ökologische Gleichgewicht unserer Erde bewahren.",
     "score": 1
   }
 ]
