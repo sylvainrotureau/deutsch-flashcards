@@ -1,44 +1,51 @@
 [
   {
-    "filename": "a2 b1 environnement et nature.json",
-    "title": "Environnement & Nature",
-    "description": "Écologie, climat, météo, tri des déchets et développement durable (50 cartes).",
+    "filename": "a2 b1 reisen und verkehr.json",
+    "title": "Voyages & Transports",
+    "description": "Gare, aéroport, hôtel, orientation et déplacements (50 cartes).",
     "level": "A2-B1",
+    "icon": "fa-plane-departure"
+  },
+  {
+    "filename": "a2 b1 vie quotidienne habitation.json",
+    "title": "Vie quotidienne & Logement",
+    "description": "Routine, tâches ménagères, logement et vie de quartier (50 cartes).",
+    "level": "A2-B1",
+    "icon": "fa-house-user"
+  },
+  {
+    "filename": "a2 environnement.json",
+    "title": "Environnement & Nature",
+    "description": "Météo, paysages, animaux, écologie et climat.",
+    "level": "A2",
     "icon": "fa-tree"
   },
   {
-    "filename": "a2 b1 sante bien etre.json",
+    "filename": "a2 sante bien etre.json",
     "title": "Santé & Bien-être",
-    "description": "Symptômes, consultation médicale, corps humain, pharmacie et hygiène de vie (50 cartes).",
-    "level": "A2-B1",
+    "description": "Corps humain, symptômes, rendez-vous médical et pharmacie.",
+    "level": "A2",
     "icon": "fa-notes-medical"
-  },
-  {
-    "filename": "b1 travail carriere.json",
-    "title": "Travail & Carrière",
-    "description": "Recrutement, entretiens, contrat, vie de bureau, salaire et évolution (50 cartes).",
-    "level": "B1",
-    "icon": "fa-briefcase"
   },
   {
     "filename": "b1 societe opinions.json",
     "title": "Société & Arguments",
-    "description": "Exprimer son opinion, débattre, médias, démocratie et faits de société (50 cartes).",
+    "description": "Exprimer son opinion, débattre, médias et faits de société (50 cartes).",
     "level": "B1",
     "icon": "fa-comments"
   },
   {
-  "filename": "a2 b1 vie quotidienne habitation.json",
-  "title": "Vie quotidienne & Logement",
-  "description": "Routine, tâches ménagères, logement, bail et vie de quartier (50 cartes).",
-  "level": "A2-B1",
-  "icon": "fa-house-user"
+    "filename": "b1 technologie media.json",
+    "title": "Technologie & Médias",
+    "description": "Informatique, réseaux sociaux, internet et outils numériques.",
+    "level": "B1",
+    "icon": "fa-laptop-code"
   },
   {
-    "filename": "a2 b1 reisen und verkehr.json",
-    "title": "Voyages & Transports",
-    "description": "Gare, aéroport, hôtel, orientation et déplacements en vacances (50 cartes).",
-    "level": "A2-B1",
-    "icon": "fa-plane-departure"
+    "filename": "b1 travail carriere.json",
+    "title": "Travail & Carrière",
+    "description": "Recrutement, entretiens, contrat, vie de bureau et salaire (50 cartes).",
+    "level": "B1",
+    "icon": "fa-briefcase"
   }
 ]
