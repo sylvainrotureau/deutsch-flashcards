@@ -10,7 +10,8 @@
 <body>
   <div class="container">
     <header class="header nav-header">
-      <a href="./index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Sommaire</a>
+      <!-- Changement ici : bouton interactif pour garantir le retour au sommaire -->
+      <button onclick="goToIndex()" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Sommaire</button>
       <h2 id="theme-title">Chargement...</h2>
     </header>
 
@@ -75,6 +76,12 @@
     let vocabulary = [];
     let currentCard = null;
     let fileName = "";
+
+    // Redirection propre vers le sommaire sans conserver les arguments dans l'URL
+    function goToIndex() {
+      const basePath = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+      window.location.href = basePath + '/index.html';
+    }
 
     const urlParams = new URLSearchParams(window.location.search);
     const rawThemeParam = urlParams.get('theme') || 'b1 travail carriere.json';
