@@ -2,7 +2,54 @@
   --primary: #4f46e5;
   --primary-hover: #4338ca;
   --bg-color: #f8fafc;
-  --card-bg: #ffffff;
+  --card-bg: #ffffff;.text-audio-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.example-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #f1f5f9;
+  padding: 8px 14px;
+  border-radius: 10px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.btn-audio {
+  background: #e0e7ff;
+  border: none;
+  color: var(--primary);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s, background 0.15s;
+  flex-shrink: 0;
+}
+
+.btn-audio:hover {
+  background: #c7d2fe;
+  transform: scale(1.08);
+}
+
+.btn-audio-sub {
+  width: 30px;
+  height: 30px;
+  font-size: 0.85rem;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
   --text-main: #0f172a;
   --text-muted: #64748b;
   --border-radius: 16px;
