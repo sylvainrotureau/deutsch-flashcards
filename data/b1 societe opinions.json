@@ -1,26 +1,402 @@
 [
   {
-    "id": 501,
+    "id": 1,
     "de": "Meiner Meinung nach (+ Verb)",
     "fr": "À mon avis...",
     "type": "Locution",
-    "example": "Meiner Meinung nach ist diese Lösung die beste.",
+    "example": "Meiner Meinung nach sollte der öffentliche Nahverkehr kostenlos sein.",
     "score": 1
   },
   {
-    "id": 502,
+    "id": 2,
+    "de": "Ich bin der Meinung / der Ansicht, dass...",
+    "fr": "Je suis d'avis que...",
+    "type": "Expression",
+    "example": "Ich bin der Ansicht, dass Bildung für alle zugänglich sein muss.",
+    "score": 1
+  },
+  {
+    "id": 3,
+    "de": "Ich stehe auf dem Standpunkt, dass...",
+    "fr": "Mon point de vue est que...",
+    "type": "Expression",
+    "example": "Ich stehe auf dem Standpunkt, dass mehr für den Umweltschutz getan werden muss.",
+    "score": 1
+  },
+  {
+    "id": 4,
+    "de": "Einerseits... andererseits...",
+    "fr": "D'une part... d'autre part...",
+    "type": "Connecteur",
+    "example": "Einerseits bietet die Stadt Vorteile, andererseits ist das Land ruhiger.",
+    "score": 1
+  },
+  {
+    "id": 5,
     "de": "der Vorteil / der Nachteil",
     "fr": "l'avantage / l'inconvénient",
-    "type": "Nom",
-    "example": "Ein wichtiger Vorteil ist die Zeitersparnis.",
+    "type": "Nom (m)",
+    "example": "Ein wichtiger Vorteil von Homeoffice ist die Ersparnis von Fahrzeit.",
     "score": 1
   },
   {
-    "id": 503,
+    "id": 6,
     "de": "überzeugen von (+ Dat.)",
     "fr": "convaincre de",
+    "type": "Verbe à préposition",
+    "example": "Seine Argumente haben mich vollkommen überzeugt.",
+    "score": 1
+  },
+  {
+    "id": 7,
+    "de": "überzeugend",
+    "fr": "convaincant",
+    "type": "Adjectif",
+    "example": "Die Präsentation war sehr klar und überzeugend.",
+    "score": 1
+  },
+  {
+    "id": 8,
+    "de": "das Argument / das Gegenargument",
+    "fr": "l'argument / le contre-argument",
+    "type": "Nom (n)",
+    "example": "Ein starkes Gegenargument betrifft die hohen Kosten.",
+    "score": 1
+  },
+  {
+    "id": 9,
+    "de": "zustimmen (+ Dat.) / Recht haben",
+    "fr": "être d'accord avec / avoir raison",
+    "type": "Verbe / Expression",
+    "example": "Ich stimme dir in diesem Punkt völlig zu.",
+    "score": 1
+  },
+  {
+    "id": 10,
+    "de": "widersprechen (+ Dat.)",
+    "fr": "contredire / ne pas être d'accord",
+    "type": "Verbe séparable",
+    "example": "Da muss ich Ihnen leider widersprechen.",
+    "score": 1
+  },
+  {
+    "id": 11,
+    "de": "Im Gegensatz zu (+ Dat.)",
+    "fr": "Contrairement à...",
+    "type": "Locution",
+    "example": "Im Gegensatz zu früher nutzen heute fast alle ein Smartphone.",
+    "score": 1
+  },
+  {
+    "id": 12,
+    "de": "die Debatte / die Diskussion führen",
+    "fr": "mener le débat / la discussion",
+    "type": "Expression",
+    "example": "In den Medien wird eine sachliche Debatte geführt.",
+    "score": 1
+  },
+  {
+    "id": 13,
+    "de": "der Kompromiss schließen",
+    "fr": "faire / trouver un compromis",
+    "type": "Expression",
+    "example": "Nach langen Verhandlungen haben beide Seiten einen Kompromiss geschlossen.",
+    "score": 1
+  },
+  {
+    "id": 14,
+    "de": "die Meinungsfreiheit",
+    "fr": "la liberté d'expression",
+    "type": "Nom (f)",
+    "example": "Die Meinungsfreiheit ist ein wichtiges Grundrecht in einer Demokratie.",
+    "score": 1
+  },
+  {
+    "id": 15,
+    "de": "die Gesellschaft",
+    "fr": "la société",
+    "type": "Nom (f)",
+    "example": "Unsere Gesellschaft verändert sich durch die Digitalisierung schnell.",
+    "score": 1
+  },
+  {
+    "id": 16,
+    "de": "die Gemeinschaft / der Zusammenhalt",
+    "fr": "la communauté / la cohésion sociale",
+    "type": "Nom (f/m)",
+    "example": "Der gesellschaftliche Zusammenhalt ist in Krisenzeiten besonders wichtig.",
+    "score": 1
+  },
+  {
+    "id": 17,
+    "de": "die Bürgerschaft / der Bürger",
+    "fr": "les citoyens / le citoyen",
+    "type": "Nom (f/m)",
+    "example": "Alle Bürgerinnen und Bürger sollten das Recht haben mitzubestimmen.",
+    "score": 1
+  },
+  {
+    "id": 18,
+    "de": "die Vorurteile abbauen",
+    "fr": "déconstruire / combattre les préjugés",
+    "type": "Expression",
+    "example": "Persönlicher Austausch hilft dabei, Vorurteile abzubauen.",
+    "score": 1
+  },
+  {
+    "id": 19,
+    "de": "die Gleichberechtigung",
+    "fr": "l'égalité des droits",
+    "type": "Nom (f)",
+    "example": "Die Gleichberechtigung von Mann und Frau ist gesetzlich verankert.",
+    "score": 1
+  },
+  {
+    "id": 20,
+    "de": "die Chancengleichheit",
+    "fr": "l'égalité des chances",
+    "type": "Nom (f)",
+    "example": "Das Bildungssystem sollte allen Kindern Chancengleichheit bieten.",
+    "score": 1
+  },
+  {
+    "id": 21,
+    "de": "die Diskriminierung bekämpfen",
+    "fr": "lutter contre la discrimination",
+    "type": "Expression",
+    "example": "Wir müssen jede Form von Diskriminierung entschieden bekämpfen.",
+    "score": 1
+  },
+  {
+    "id": 22,
+    "de": "die Integration / integrieren",
+    "fr": "l'intégration / intégrer",
+    "type": "Nom (f) / Verbe",
+    "example": "Sprachkurse fördern die Integration von Zuwanderern.",
+    "score": 1
+  },
+  {
+    "id": 23,
+    "de": "die Vielfalt / die Diversität",
+    "fr": "la diversité / la pluralité",
+    "type": "Nom (f)",
+    "example": "Kulturelle Vielfalt bereichert das Zusammenleben in einer Stadt.",
+    "score": 1
+  },
+  {
+    "id": 24,
+    "de": "die Armut und der Reichtum",
+    "fr": "la pauvreté et la richesse",
+    "type": "Nom (f/m)",
+    "example": "Die Schere zwischen Armut und Reichtum wird immer größer.",
+    "score": 1
+  },
+  {
+    "id": 25,
+    "de": "die Spende / spenden",
+    "fr": "le don / faire un don",
+    "type": "Nom (f) / Verbe",
+    "example": "Viele Menschen spenden Geld für soziale Projekte.",
+    "score": 1
+  },
+  {
+    "id": 26,
+    "de": "ehrenamtlich tätig sein",
+    "fr": "faire du bénévolat / être bénévole",
+    "type": "Expression",
+    "example": "Sie engagiert sich ehrenamtlich beim Roten Kreuz.",
+    "score": 1
+  },
+  {
+    "id": 27,
+    "de": "das soziale Netzwerk",
+    "fr": "le réseau social",
+    "type": "Nom (n)",
+    "example": "Soziale Netzwerke verbinden Menschen auf der ganzen Welt.",
+    "score": 1
+  },
+  {
+    "id": 28,
+    "de": "die Berichterstattung",
+    "fr": "la couverture médiatique / le reportage",
+    "type": "Nom (f)",
+    "example": "Die Berichterstattung über die Wahl war sehr ausführlich.",
+    "score": 1
+  },
+  {
+    "id": 29,
+    "de": "die Nachricht / die Tagesschau",
+    "fr": "l'information (nouvelle) / le journal télévisé",
+    "type": "Nom (f)",
+    "example": "Ich sehe mir jeden Abend die Nachrichten im Fernsehen an.",
+    "score": 1
+  },
+  {
+    "id": 30,
+    "de": "die Falschnachricht / Fake News",
+    "fr": "la fausse information / la désinformation",
+    "type": "Nom (f)",
+    "example": "Man sollte Quellen im Internet prüfen, um Falschnachrichten zu erkennen.",
+    "score": 1
+  },
+  {
+    "id": 31,
+    "de": "die Quelle überprüfen",
+    "fr": "vérifier la source",
+    "type": "Expression",
+    "example": "Bevor man Informationen teilt, muss man die Quelle überprüfen.",
+    "score": 1
+  },
+  {
+    "id": 32,
+    "de": "die Veröffentlichung / veröffentlichen",
+    "fr": "la publication / publier",
+    "type": "Nom (f) / Verbe",
+    "example": "Der Journalist hat einen kritischen Artikel veröffentlicht.",
+    "score": 1
+  },
+  {
+    "id": 33,
+    "de": "die Öffentlichkeit",
+    "fr": "le grand public / l'opinion publique",
+    "type": "Nom (f)",
+    "example": "Das Thema erregte großes Interesse in der Öffentlichkeit.",
+    "score": 1
+  },
+  {
+    "id": 34,
+    "de": "der Einfluss auf (+ Akk.)",
+    "fr": "l'influence / l'impact sur",
+    "type": "Nom (m)",
+    "example": "Die Medien haben einen starken Einfluss auf die öffentliche Meinung.",
+    "score": 1
+  },
+  {
+    "id": 35,
+    "de": "beeinflussen",
+    "fr": "influencer",
     "type": "Verbe",
-    "example": "Er hat mich von seinem Projekt überzeugt.",
+    "example": "Werbung versucht das Kaufverhalten der Konsumenten zu beeinflussen.",
+    "score": 1
+  },
+  {
+    "id": 36,
+    "de": "kritisch hinterfragen",
+    "fr": "remettre en question de manière critique",
+    "type": "Expression",
+    "example": "Man sollte Behauptungen in den Medien kritisch hinterfragen.",
+    "score": 1
+  },
+  {
+    "id": 37,
+    "de": "die Medienkompetenz",
+    "fr": "l'éducation aux médias / la compétence médiatique",
+    "type": "Nom (f)",
+    "example": "Medienkompetenz sollte schon in der Schule unterrichtet werden.",
+    "score": 1
+  },
+  {
+    "id": 38,
+    "de": "die Wahl / wählen gehen",
+    "fr": "l'élection / aller voter",
+    "type": "Nom (f) / Expression",
+    "example": "Am Sonntag gehen die Bürger zur Wahl des neuen Parlaments.",
+    "score": 1
+  },
+  {
+    "id": 39,
+    "de": "die Politik / die Partei",
+    "fr": "la politique / le parti politique",
+    "type": "Nom (f)",
+    "example": "Mehrere Parteien bilden nach der Wahl eine Koalition.",
+    "score": 1
+  },
+  {
+    "id": 40,
+    "de": "das Gesetz verabschieden",
+    "fr": "voter / adopter une loi",
+    "type": "Expression",
+    "example": "Das Parlament hat gestern ein neues Klimaschutzgesetz verabschiedet.",
+    "score": 1
+  },
+  {
+    "id": 41,
+    "de": "die Reform durchführen",
+    "fr": "mener une réforme",
+    "type": "Expression",
+    "example": "Die Regierung plant eine umfassende Reform des Rentensystems.",
+    "score": 1
+  },
+  {
+    "id": 42,
+    "de": "die Steuer / Steuern zahlen",
+    "fr": "l'impôt / payer des impôts",
+    "type": "Nom (f) / Expression",
+    "example": "Mit den Steuern werden Schulen, Straßen und Krankenhäuser finanziert.",
+    "score": 1
+  },
+  {
+    "id": 43,
+    "de": "die Demonstration / demonstrieren",
+    "fr": "la manifestation / manifester",
+    "type": "Nom (f) / Verbe",
+    "example": "Tausende Menschen demonstrieren für den Frieden.",
+    "score": 1
+  },
+  {
+    "id": 44,
+    "de": "die Meinungsverschiedenheit",
+    "fr": "le désaccord / le différend",
+    "type": "Nom (f)",
+    "example": "Trotz kleiner Meinungsverschiedenheiten arbeiten sie gut zusammen.",
+    "score": 1
+  },
+  {
+    "id": 45,
+    "de": "die Entscheidung treffen",
+    "fr": "prendre une décision",
+    "type": "Expression",
+    "example": "Wir müssen sorgfältig abwägen, bevor wir eine Entscheidung treffen.",
+    "score": 1
+  },
+  {
+    "id": 46,
+    "de": "die Verantwortung tragen",
+    "fr": "porter la responsabilité",
+    "type": "Expression",
+    "example": "Politiker tragen eine hohe Verantwortung gegenüber der Bevölkerung.",
+    "score": 1
+  },
+  {
+    "id": 47,
+    "de": "die Auswirkung / die Folge",
+    "fr": "la répercussion / la conséquence",
+    "type": "Nom (f)",
+    "example": "Diese Maßnahme hat positive Auswirkungen auf die Wirtschaft.",
+    "score": 1
+  },
+  {
+    "id": 48,
+    "de": "die Herausforderung meistern",
+    "fr": "relever / surmonter le défi",
+    "type": "Expression",
+    "example": "Gemeinsam können wir diese große Herausforderung meistern.",
+    "score": 1
+  },
+  {
+    "id": 49,
+    "de": "die Zukunft gestalten",
+    "fr": "façonner / construire l'avenir",
+    "type": "Expression",
+    "example": "Die junge Generation möchte die Zukunft aktiv mitgestalten.",
+    "score": 1
+  },
+  {
+    "id": 50,
+    "de": "Zusammenfassend lässt sich sagen, dass...",
+    "fr": "En résumé, on peut dire que...",
+    "type": "Locution de conclusion",
+    "example": "Zusammenfassend lässt sich sagen, dass das Thema viele Facetten hat.",
     "score": 1
   }
 ]
