@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "de": "die Fahrkarte buchen",
+    "fr": "réserver le billet de transport",
+    "type": "Expression",
+    "example": "Ich habe die Fahrkarte online über die App gebucht.",
+    "score": 1
+  },
+  {
+    "id": 2,
+    "de": "der Hauptbahnhof",
+    "fr": "la gare centrale",
+    "type": "Nom (m)",
+    "example": "Der Zug kommt pünktlich am Hauptbahnhof an.",
+    "score": 1
+  },
+  {
+    "id": 3,
+    "de": "der Bahnsteig",
+    "fr": "le quai de gare",
+    "type": "Nom (m)",
+    "example": "Der ICE nach Berlin fährt heute von Bahnsteig 4 ab.",
+    "score": 1
+  },
+  {
+    "id": 4,
+    "de": "abfahren",
+    "fr": "partir (véhicule, train)",
+    "type": "Verbe séparable",
+    "example": "Wann fährt der nächste Bus ab?",
+    "score": 1
+  },
+  {
+    "id": 5,
+    "de": "ankommen",
+    "fr": "arriver",
+    "type": "Verbe séparable",
+    "example": "Wir kommen voraussichtlich um 18 Uhr an.",
+    "score": 1
+  },
+  {
+    "id": 6,
+    "de": "umsteigen",
+    "fr": "changer de train / correspondance",
+    "type": "Verbe séparable",
+    "example": "In Frankfurt müssen wir in den Regionalzug umsteigen.",
+    "score": 1
+  },
+  {
+    "id": 7,
+    "de": "die Verspätung",
+    "fr": "le retard",
+    "type": "Nom (f)",
+    "example": "Wegen einer Störung hat der Zug 20 Minuten Verspätung.",
+    "score": 1
+  },
+  {
+    "id": 8,
+    "de": "fällt aus (ausfallen)",
+    "fr": "est annulé (être annulé)",
+    "type": "Verbe séparable",
+    "example": "Der Flug nach München fällt heute leider aus.",
+    "score": 1
+  },
+  {
+    "id": 9,
+    "de": "der Anschlusszug",
+    "fr": "le train de correspondance",
+    "type": "Nom (m)",
+    "example": "Ich hoffe, ich verpasse meinen Anschlusszug nicht.",
+    "score": 1
+  },
+  {
+    "id": 10,
+    "de": "die Fahrplanauskunft",
+    "fr": "les informations d'horaires",
+    "type": "Nom (f)",
+    "example": "Ich habe die Fahrplanauskunft auf der Website geprüft.",
+    "score": 1
+  },
+  {
+    "id": 11,
+    "de": "die Hin- und Rückfahrkarte",
+    "fr": "le billet aller-retour",
+    "type": "Nom (f)",
+    "example": "Eine Hin- und Rückfahrkarte ist oft günstiger.",
+    "score": 1
+  },
+  {
+    "id": 12,
+    "de": "die Sitzplatzreservierung",
+    "fr": "la réservation de siège",
+    "type": "Nom (f)",
+    "example": "Für lange Fahrten empfehle ich eine Sitzplatzreservierung.",
+    "score": 1
+  },
+  {
+    "id": 13,
+    "de": "der Flughafen",
+    "fr": "l'aéroport",
+    "type": "Nom (m)",
+    "example": "Wir müssen zwei Stunden vor dem Abflug am Flughafen sein.",
+    "score": 1
+  },
+  {
+    "id": 14,
+    "de": "das Handgepäck",
+    "fr": "le bagage à main",
+    "type": "Nom (n)",
+    "example": "Flüssigkeiten im Handgepäck sind streng begrenzt.",
+    "score": 1
+  },
+  {
+    "id": 15,
+    "de": "der Koffer aufgeben",
+    "fr": "enregistrer la valise",
+    "type": "Expression",
+    "example": "Wo kann ich meinen Koffer für den Flug aufgeben?",
+    "score": 1
+  },
+  {
+    "id": 16,
+    "de": "die Sicherheitskontrolle",
+    "fr": "le contrôle de sécurité",
+    "type": "Nom (f)",
+    "example": "Die Schlange an der Sicherheitskontrolle war sehr lang.",
+    "score": 1
+  },
+  {
+    "id": 17,
+    "de": "das Flugticket vorzeigen",
+    "fr": "présenter le billet d'avion",
+    "type": "Expression",
+    "example": "Bitte zeigen Sie beim Einsteigen Ihr Ticket und Ihren Pass vor.",
+    "score": 1
+  },
+  {
+    "id": 18,
+    "de": "mitten im Stau stehen",
+    "fr": "être coincé dans un bouchon",
+    "type": "Expression",
+    "example": "Auf der Autobahn stehen wir seit einer Stunde im Stau.",
+    "score": 1
+  },
+  {
+    "id": 19,
+    "de": "einen Mietwagen leihen",
+    "fr": "louer une voiture de location",
+    "type": "Expression",
+    "example": "Am Flughafen haben wir uns einen Mietwagen geliehen.",
+    "score": 1
+  },
+  {
+    "id": 20,
+    "de": "tanken",
+    "fr": "faire le plein d'essence",
+    "type": "Verbe",
+    "example": "Bevor wir weiterfahren, müssen wir noch tanken.",
+    "score": 1
+  },
+  {
+    "id": 21,
+    "de": "die Tankstelle",
+    "fr": "la station-service",
+    "type": "Nom (f)",
+    "example": "An der nächsten Tankstelle machen wir eine Pause.",
+    "score": 1
+  },
+  {
+    "id": 22,
+    "de": "die Mautgebühr",
+    "fr": "le péage / la taxe de péage",
+    "type": "Nom (f)",
+    "example": "In Frankreich muss man auf der Autobahn Mautgebühren zahlen.",
+    "score": 1
+  },
+  {
+    "id": 23,
+    "de": "die Geschwindigkeit begrenzen",
+    "fr": "limiter la vitesse",
+    "type": "Expression",
+    "example": "In der Baustelle ist die Geschwindigkeit auf 80 km/h begrenzt.",
+    "score": 1
+  },
+  {
+    "id": 24,
+    "de": "die Fahrkarte entwerten",
+    "fr": "composter / valider le titre de transport",
+    "type": "Expression",
+    "example": "Vergessen Sie nicht, das Ticket vor der Fahrt zu entwerten.",
+    "score": 1
+  },
+  {
+    "id": 25,
+    "de": "Schwarz fahren",
+    "fr": "frauder / voyager sans billet",
+    "type": "Expression",
+    "example": "Wer schwarz fährt, muss eine hohe Strafe bezahlen.",
+    "score": 1
+  },
+  {
+    "id": 26,
+    "de": "die Unterkunft buchen",
+    "fr": "réserver l'hébergement",
+    "type": "Expression",
+    "example": "Wir haben eine gemütliche Unterkunft am See gebucht.",
+    "score": 1
+  },
+  {
+    "id": 27,
+    "de": "das Hotelzimmer reservieren",
+    "fr": "réserver une chambre d'hôtel",
+    "type": "Expression",
+    "example": "Ich möchte ein Doppelzimmer für drei Nächte reservieren.",
+    "score": 1
+  },
+  {
+    "id": 28,
+    "de": "die Übernachtung inkl. Frühstück",
+    "fr": "la nuitée avec petit-déjeuner compris",
+    "type": "Expression",
+    "example": "Der Preis gilt pro Person für eine Übernachtung inkl. Frühstück.",
+    "score": 1
+  },
+  {
+    "id": 29,
+    "de": "einchecken / auschecken",
+    "fr": "faire l'arrivée / faire le départ (hôtel)",
+    "type": "Verbe",
+    "example": "Wir können ab 14 Uhr im Hotel einchecken.",
+    "score": 1
+  },
+  {
+    "id": 30,
+    "de": "die Rezeption",
+    "fr": "la réception",
+    "type": "Nom (f)",
+    "example": "Der Schlüssel liegt an der Rezeption für Sie bereit.",
+    "score": 1
+  },
+  {
+    "id": 31,
+    "de": "die Ferienwohnung",
+    "fr": "le gîte / l'appartement de vacances",
+    "type": "Nom (f)",
+    "example": "Familien buchen im Urlaub oft eine Ferienwohnung.",
+    "score": 1
+  },
+  {
+    "id": 32,
+    "de": "die Sehenswürdigkeit",
+    "fr": "la curiosité touristique / le monument",
+    "type": "Nom (f)",
+    "example": "Das Brandenburger Tor ist eine berühmte Sehenswürdigkeit.",
+    "score": 1
+  },
+  {
+    "id": 33,
+    "de": "die Stadtbesichtigung",
+    "fr": "la visite de la ville",
+    "type": "Nom (f)",
+    "example": "Morgen machen wir eine geführte Stadtbesichtigung.",
+    "score": 1
+  },
+  {
+    "id": 34,
+    "de": "der Stadtplan",
+    "fr": "le plan de ville",
+    "type": "Nom (m)",
+    "example": "Auf dem Stadtplan sind alle wichtigen Museen eingezeichnet.",
+    "score": 1
+  },
+  {
+    "id": 35,
+    "de": "sich verlaufen / sich verfahren",
+    "fr": "se perdre (à pied) / se perdre (en véhicule)",
+    "type": "Verbe réfléchi",
+    "example": "Ohne GPS haben wir uns in den kleinen Gassen verfahren.",
+    "score": 1
+  },
+  {
+    "id": 36,
+    "de": "nach dem Weg fragen",
+    "fr": "demander son chemin",
+    "type": "Expression",
+    "example": "Entschuldigung, darf ich Sie nach dem Weg fragen?",
+    "score": 1
+  },
+  {
+    "id": 37,
+    "de": "geradeaus gehen",
+    "fr": "aller tout droit",
+    "type": "Expression",
+    "example": "Gehen Sie immer geradeaus bis zur Ampel.",
+    "score": 1
+  },
+  {
+    "id": 38,
+    "de": "abbiegen (nach links / rechts)",
+    "fr": "tourner (à gauche / à droite)",
+    "type": "Verbe séparable",
+    "example": "An der Kreuzung müssen Sie nach rechts abbiegen.",
+    "score": 1
+  },
+  {
+    "id": 39,
+    "de": "die Kreuzung überqueren",
+    "fr": "traverser le carrefour",
+    "type": "Expression",
+    "example": "Überqueren Sie vorsichtig die Kreuzung.",
+    "score": 1
+  },
+  {
+    "id": 40,
+    "de": "der Reiseführer",
+    "fr": "le guide de voyage (livre ou personne)",
+    "type": "Nom (m)",
+    "example": "Im Reiseführer stehen tolle Tipps für Restaurants.",
+    "score": 1
+  },
+  {
+    "id": 41,
+    "de": "das Ausflugsziel",
+    "fr": "la destination d'excursion",
+    "type": "Nom (n)",
+    "example": "Die Burg ist ein beliebtes Ausflugsziel für Familien.",
+    "score": 1
+  },
+  {
+    "id": 42,
+    "de": "die Landschaft genießen",
+    "fr": "profiter du paysage",
+    "type": "Expression",
+    "example": "Während der Zugfahrt kann man die schöne Landschaft genießen.",
+    "score": 1
+  },
+  {
+    "id": 43,
+    "de": "das Souvenir kaufen",
+    "fr": "acheter un souvenir",
+    "type": "Expression",
+    "example": "Ich möchte eine Postkarte als Souvenir kaufen.",
+    "score": 1
+  },
+  {
+    "id": 44,
+    "de": "der Reisepass ist gültig",
+    "fr": "le passeport est valide",
+    "type": "Expression",
+    "example": "Prüfen Sie vor der Reise, ob Ihr Pass noch gültig ist.",
+    "score": 1
+  },
+  {
+    "id": 45,
+    "de": "das Visum beantragen",
+    "fr": "demander un visa",
+    "type": "Expression",
+    "example": "Für manche Länder muss man rechtzeitig ein Visum beantragen.",
+    "score": 1
+  },
+  {
+    "id": 46,
+    "de": "die Auslandskrankenversicherung",
+    "fr": "l'assurance maladie à l'étranger",
+    "type": "Nom (f)",
+    "example": "Eine Auslandskrankenversicherung ist im Notfall sehr wichtig.",
+    "score": 1
+  },
+  {
+    "id": 47,
+    "de": "die Geld wechseln",
+    "fr": "changer de la monnaie",
+    "type": "Expression",
+    "example": "Wo kann ich hier Euro in Schweizer Franken wechseln?",
+    "score": 1
+  },
+  {
+    "id": 48,
+    "de": "Gepäck aufbewahren",
+    "fr": "laisser les bagages à la consigne",
+    "type": "Expression",
+    "example": "Wir können unser Gepäck im Schließfach am Bahnhof aufbewahren.",
+    "score": 1
+  },
+  {
+    "id": 49,
+    "de": "sich erholen",
+    "fr": "se reposer / se ressourcer",
+    "type": "Verbe réfléchi",
+    "example": "Im Urlaub möchte ich mich einfach nur erholen.",
+    "score": 1
+  },
+  {
+    "id": 50,
+    "de": "eine unvergessliche Reise",
+    "fr": "un voyage inoubliable",
+    "type": "Expression",
+    "example": "Unsere Reise nach Österreich war wirklich unvergesslich.",
+    "score": 1
+  }
+]
