@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "a2 environnement.json",
+    "title": "Environnement & Nature",
+    "description": "Météo, paysages, animaux et écologie au quotidien.",
+    "level": "A2",
+    "icon": "fa-tree"
+  },
+  {
+    "filename": "a2 sante bien etre.json",
+    "title": "Santé & Bien-être",
+    "description": "Corps humain, symptômes, rendez-vous médical.",
+    "level": "A2",
+    "icon": "fa-notes-medical"
+  },
+  {
+    "filename": "b1 travail carriere.json",
+    "title": "Travail & Carrière",
+    "description": "Entretiens, monde professionnel, tâches et projets.",
+    "level": "B1",
+    "icon": "fa-briefcase"
+  },
+  {
+    "filename": "b1 societe opinions.json",
+    "title": "Société & Arguments",
+    "description": "Exprimer son opinion, débattre, faits de société.",
+    "level": "B1",
+    "icon": "fa-comments"
+  }
+]

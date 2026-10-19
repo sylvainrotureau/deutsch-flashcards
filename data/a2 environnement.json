@@ -1,0 +1,34 @@
+[
+  {
+    "id": 101,
+    "de": "das Wetter",
+    "fr": "la météo / le temps",
+    "type": "Nom",
+    "example": "Wie ist das Wetter heute in Berlin?",
+    "score": 1
+  },
+  {
+    "id": 102,
+    "de": "der Müll trennen",
+    "fr": "trier les déchets",
+    "type": "Expression",
+    "example": "In Deutschland trennt man den Müll sehr sorgfältig.",
+    "score": 1
+  },
+  {
+    "id": 103,
+    "de": "die Umwelt schützen",
+    "fr": "protéger l'environnement",
+    "type": "Expression",
+    "example": "Wir müssen die Umwelt für die Zukunft schützen.",
+    "score": 1
+  },
+  {
+    "id": 104,
+    "de": "sparen",
+    "fr": "économiser",
+    "type": "Verbe",
+    "example": "Man sollte Energie und Wasser sparen.",
+    "score": 1
+  }
+]

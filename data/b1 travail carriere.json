@@ -1,0 +1,34 @@
+[
+  {
+    "id": 301,
+    "de": "sich bewerben um (+ Akk.)",
+    "fr": "postuler à / poser sa candidature pour",
+    "type": "Verbe à préposition",
+    "example": "Ich bewerbe mich um eine Stelle als Webentwickler.",
+    "score": 1
+  },
+  {
+    "id": 302,
+    "de": "das Vorstellungsgespräch",
+    "fr": "l'entretien d'embauche",
+    "type": "Nom",
+    "example": "Das Vorstellungsgespräch war sehr erfolgreich.",
+    "score": 1
+  },
+  {
+    "id": 303,
+    "de": "Verantwortung übernehmen",
+    "fr": "prendre des responsabilités",
+    "type": "Expression",
+    "example": "In meiner neuen Rolle muss ich mehr Verantwortung übernehmen.",
+    "score": 1
+  },
+  {
+    "id": 304,
+    "de": "die Überstunden",
+    "fr": "les heures supplémentaires",
+    "type": "Nom",
+    "example": "Diese Woche habe ich viele Überstunden gemacht.",
+    "score": 1
+  }
+]

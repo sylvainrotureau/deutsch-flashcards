@@ -1,0 +1,26 @@
+[
+  {
+    "id": 201,
+    "de": "der Termin beim Arzt",
+    "fr": "le rendez-vous chez le médecin",
+    "type": "Expression",
+    "example": "Ich habe morgen einen Termin beim Arzt.",
+    "score": 1
+  },
+  {
+    "id": 202,
+    "de": "weh tun",
+    "fr": "faire mal / douloir",
+    "type": "Verbe",
+    "example": "Mein Kopf tut seit heute Morgen weh.",
+    "score": 1
+  },
+  {
+    "id": 203,
+    "de": "das Medikament einnehmen",
+    "fr": "prendre le médicament",
+    "type": "Expression",
+    "example": "Sie müssen dieses Medikament dreimal täglich einnehmen.",
+    "score": 1
+  }
+]

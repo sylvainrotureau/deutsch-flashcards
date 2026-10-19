@@ -1,0 +1,26 @@
+[
+  {
+    "id": 501,
+    "de": "Meiner Meinung nach (+ Verb)",
+    "fr": "À mon avis...",
+    "type": "Locution",
+    "example": "Meiner Meinung nach ist diese Lösung die beste.",
+    "score": 1
+  },
+  {
+    "id": 502,
+    "de": "der Vorteil / der Nachteil",
+    "fr": "l'avantage / l'inconvénient",
+    "type": "Nom",
+    "example": "Ein wichtiger Vorteil ist die Zeitersparnis.",
+    "score": 1
+  },
+  {
+    "id": 503,
+    "de": "überzeugen von (+ Dat.)",
+    "fr": "convaincre de",
+    "type": "Verbe",
+    "example": "Er hat mich von seinem Projekt überzeugt.",
+    "score": 1
+  }
+]

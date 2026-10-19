@@ -1,0 +1,26 @@
+[
+  {
+    "id": 401,
+    "de": "herunterladen",
+    "fr": "télécharger",
+    "type": "Verbe séparable",
+    "example": "Ich lade die Datei aus dem Internet herunter.",
+    "score": 1
+  },
+  {
+    "id": 402,
+    "de": "die Datensicherheit",
+    "fr": "la sécurité des données",
+    "type": "Nom",
+    "example": "Datensicherheit ist für Unternehmen sehr wichtig.",
+    "score": 1
+  },
+  {
+    "id": 403,
+    "de": "ausführen",
+    "fr": "exécuter / effectuer",
+    "type": "Verbe",
+    "example": "Das Programm führt das Skript automatisch aus.",
+    "score": 1
+  }
+]
