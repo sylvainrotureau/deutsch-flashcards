@@ -17,18 +17,32 @@
     <main class="flashcard-wrapper">
       <div class="card-container" id="card-container">
         <div class="card" id="flashcard">
+          <!-- Recto (Allemand) -->
           <div class="card-face card-front">
             <span class="card-type" id="card-type">Mot</span>
+            
             <div class="card-content">
-              <p class="de-text" id="de-text">...</p>
-              <p class="example-text" id="example-text"></p>
+              <!-- Mot / Expression principales -->
+              <div class="text-audio-row">
+                <p class="de-text" id="de-text">...</p>
+                <button class="btn-audio" id="btn-audio-word" title="Écouter le mot">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+              </div>
+
+              <!-- Phrase d'exemple -->
+              <div class="example-row" id="example-wrapper">
+                <p class="example-text" id="example-text"></p>
+                <button class="btn-audio btn-audio-sub" id="btn-audio-example" title="Écouter la phrase d'exemple">
+                  <i class="fa-solid fa-comment-dots"></i>
+                </button>
+              </div>
             </div>
-            <button class="btn-audio" id="btn-audio" title="Écouter la prononciation">
-              <i class="fa-solid fa-volume-high"></i>
-            </button>
+
             <span class="hint-flip"><i class="fa-solid fa-rotate"></i> Cliquez pour retourner</span>
           </div>
 
+          <!-- Verso (Français) -->
           <div class="card-face card-back">
             <span class="card-type">Traduction</span>
             <div class="card-content">
@@ -39,6 +53,7 @@
         </div>
       </div>
 
+      <!-- Évaluation -->
       <div class="rating-box">
         <p>Évaluez votre niveau d'acquisition pour cette carte :</p>
         <div class="rating-buttons">
@@ -64,16 +79,17 @@
     const urlParams = new URLSearchParams(window.location.search);
     fileName = urlParams.get('theme') || 'b1 travail carriere.json';
 
-    // Nettoyer le nom pour l'affichage du titre (retirer l'extension .json)
     const cleanTitle = fileName.replace('.json', '');
     document.getElementById('theme-title').textContent = cleanTitle.toUpperCase();
 
     async function loadThemeData() {
       try {
         const response = await fetch(`data/${fileName}`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const defaultData = await response.json();
         
-        // Clé de stockage unique basée sur le nom du fichier (sans espaces)
         const storageKey = `flashcards_${fileName.replace(/\s+/g, '_')}`;
         const savedData = localStorage.getItem(storageKey);
 
@@ -117,7 +133,15 @@
 
       document.getElementById('card-type').textContent = card.type || 'Vocabulaire';
       document.getElementById('de-text').textContent = card.de;
-      document.getElementById('example-text').textContent = card.example ? `Ex: "${card.example}"` : '';
+      
+      const exampleWrapper = document.getElementById('example-wrapper');
+      if (card.example) {
+        document.getElementById('example-text').textContent = `Ex: "${card.example}"`;
+        exampleWrapper.style.display = "flex";
+      } else {
+        exampleWrapper.style.display = "none";
+      }
+
       document.getElementById('fr-text').textContent = card.fr;
 
       document.querySelectorAll('.btn-rank').forEach(btn => btn.classList.remove('active'));
@@ -127,6 +151,7 @@
     }
 
     function nextCard() {
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
       const card = getRandomCard();
       displayCard(card);
     }
@@ -138,22 +163,38 @@
       saveToLocalStorage(storageKey);
       
       document.querySelectorAll('.btn-rank').forEach(btn => btn.classList.remove('active'));
-      document.querySelector(`.btn-rank.r${score}`).classList.add('active');
+      const activeBtn = document.querySelector(`.btn-rank.r${score}`);
+      if (activeBtn) activeBtn.classList.add('active');
 
       setTimeout(nextCard, 250);
     }
 
+    function speakText(text) {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'de-DE';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
+    }
+
     document.getElementById('card-container').addEventListener('click', function(e) {
-      if (e.target.closest('#btn-audio')) return;
+      if (e.target.closest('.btn-audio')) return;
       document.getElementById('flashcard').classList.toggle('flipped');
     });
 
-    document.getElementById('btn-audio').addEventListener('click', function(e) {
+    document.getElementById('btn-audio-word').addEventListener('click', function(e) {
       e.stopPropagation();
-      if (!currentCard) return;
-      const utterance = new SpeechSynthesisUtterance(currentCard.de);
-      utterance.lang = 'de-DE';
-      window.speechSynthesis.speak(utterance);
+      if (currentCard && currentCard.de) {
+        speakText(currentCard.de);
+      }
+    });
+
+    document.getElementById('btn-audio-example').addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (currentCard && currentCard.example) {
+        speakText(currentCard.example);
+      }
     });
 
     document.getElementById('btn-next').addEventListener('click', nextCard);
