@@ -33,5 +33,12 @@
   "description": "Routine, tâches ménagères, logement, bail et vie de quartier (50 cartes).",
   "level": "A2-B1",
   "icon": "fa-house-user"
-}
+  },
+  {
+    "filename": "a2 b1 reisen und verkehr.json",
+    "title": "Voyages & Transports",
+    "description": "Gare, aéroport, hôtel, orientation et déplacements en vacances (50 cartes).",
+    "level": "A2-B1",
+    "icon": "fa-plane-departure"
+  }
 ]
