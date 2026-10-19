@@ -3,201 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Session de Flashcards | Allemand</title>
+  <title>Vocabulaire Allemand | Sommaire</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <header class="header nav-header">
-      <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Sommaire</a>
-      <h2 id="theme-title">Chargement...</h2>
+    <header class="header">
+      <h1><i class="fa-solid fa-graduation-cap"></i> Deutsch Lernen</h1>
+      <p>Choisissez un thème pour commencer votre session de révision</p>
     </header>
 
-    <main class="flashcard-wrapper">
-      <div class="card-container" id="card-container">
-        <div class="card" id="flashcard">
-          <!-- Recto (Allemand) -->
-          <div class="card-face card-front">
-            <span class="card-type" id="card-type">Mot</span>
-            
-            <div class="card-content">
-              <!-- Mot / Expression principales -->
-              <div class="text-audio-row">
-                <p class="de-text" id="de-text">...</p>
-                <button class="btn-audio" id="btn-audio-word" title="Écouter le mot">
-                  <i class="fa-solid fa-volume-high"></i>
-                </button>
-              </div>
-
-              <!-- Phrase d'exemple -->
-              <div class="example-row" id="example-wrapper">
-                <p class="example-text" id="example-text"></p>
-                <button class="btn-audio btn-audio-sub" id="btn-audio-example" title="Écouter la phrase d'exemple">
-                  <i class="fa-solid fa-comment-dots"></i>
-                </button>
-              </div>
-            </div>
-
-            <span class="hint-flip"><i class="fa-solid fa-rotate"></i> Cliquez pour retourner</span>
-          </div>
-
-          <!-- Verso (Français) -->
-          <div class="card-face card-back">
-            <span class="card-type">Traduction</span>
-            <div class="card-content">
-              <p class="fr-text" id="fr-text">...</p>
-            </div>
-            <span class="hint-flip"><i class="fa-solid fa-rotate"></i> Cliquez pour retourner</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Évaluation -->
-      <div class="rating-box">
-        <p>Évaluez votre niveau d'acquisition pour cette carte :</p>
-        <div class="rating-buttons">
-          <button class="btn-rank r1" onclick="rateCard(1)">1<br><small>Pas du tout</small></button>
-          <button class="btn-rank r2" onclick="rateCard(2)">2<br><small>Difficile</small></button>
-          <button class="btn-rank r3" onclick="rateCard(3)">3<br><small>Moyen</small></button>
-          <button class="btn-rank r4" onclick="rateCard(4)">4<br><small>Bien</small></button>
-          <button class="btn-rank r5" onclick="rateCard(5)">5<br><small>Acquis</small></button>
-        </div>
-      </div>
-
-      <div class="action-box">
-        <button class="btn-next" id="btn-next"><i class="fa-solid fa-forward"></i> Carte suivante</button>
-      </div>
+    <main id="themes-container">
+      <p style="text-align: center; color: var(--text-muted);">Chargement des fiches...</p>
     </main>
   </div>
 
   <script>
-    let vocabulary = [];
-    let currentCard = null;
-    let fileName = "";
-
-    const urlParams = new URLSearchParams(window.location.search);
-    fileName = urlParams.get('theme') || 'b1 travail carriere.json';
-
-    const cleanTitle = fileName.replace('.json', '');
-    document.getElementById('theme-title').textContent = cleanTitle.toUpperCase();
-
-    async function loadThemeData() {
+    async function loadManifest() {
+      const container = document.getElementById('themes-container');
       try {
-        const response = await fetch(`data/${fileName}`);
-        const defaultData = await response.json();
+        const response = await fetch('data/manifest.json?v=' + Date.now());
+        if (!response.ok) throw new Error("Impossible de charger manifest.json");
         
-        const storageKey = `flashcards_${fileName.replace(/\s+/g, '_')}`;
-        const savedData = localStorage.getItem(storageKey);
+        const themes = await response.json();
+        container.innerHTML = ''; 
 
-        if (savedData) {
-          vocabulary = JSON.parse(savedData);
-        } else {
-          vocabulary = defaultData;
-          saveToLocalStorage(storageKey);
+        const levels = {};
+        themes.forEach(theme => {
+          const lvl = theme.level || 'Général';
+          if (!levels[lvl]) levels[lvl] = [];
+          levels[lvl].push(theme);
+        });
+
+        for (const [level, items] of Object.entries(levels)) {
+          let sectionHTML = `
+            <section class="level-section">
+              <h2 class="badge-level level-${level.toLowerCase().replace(/[^a-z0-9]/g, '')}">Niveau ${level}</h2>
+              <div class="cards-grid">
+          `;
+
+          items.forEach(theme => {
+            const fileParam = encodeURIComponent(theme.filename);
+            sectionHTML += `
+              <a href="app.html?theme=${fileParam}" class="theme-card">
+                <div class="theme-icon"><i class="fa-solid ${theme.icon || 'fa-folder'}"></i></div>
+                <div class="theme-info">
+                  <h3>${theme.title}</h3>
+                  <p>${theme.description}</p>
+                  <span class="count-tag"><i class="fa-solid fa-layer-group"></i> ${theme.level}</span>
+                </div>
+              </a>
+            `;
+          });
+
+          sectionHTML += `</div></section>`;
+          container.innerHTML += sectionHTML;
         }
 
-        nextCard();
       } catch (error) {
-        document.getElementById('de-text').textContent = "Erreur de chargement du fichier JSON.";
-        console.error("Erreur de chargement du thème :", error);
+        container.innerHTML = `
+          <div style="text-align: center; color: #ef4444; padding: 20px;">
+            <i class="fa-solid fa-circle-exclamation" style="font-size: 2rem; margin-bottom: 10px;"></i>
+            <p><strong>Erreur de chargement du sommaire</strong></p>
+          </div>
+        `;
+        console.error("Erreur manifeste :", error);
       }
     }
 
-    function saveToLocalStorage(storageKey) {
-      localStorage.setItem(storageKey, JSON.stringify(vocabulary));
-    }
-
-    function getRandomCard() {
-      if (vocabulary.length === 0) return null;
-      let pool = [];
-      vocabulary.forEach((item, index) => {
-        let weight = Math.max(1, 6 - (item.score || 1));
-        for (let i = 0; i < weight; i++) {
-          pool.push(index);
-        }
-      });
-      let randomIndex = pool[Math.floor(Math.random() * pool.length)];
-      return vocabulary[randomIndex];
-    }
-
-    function displayCard(card) {
-      if (!card) return;
-      currentCard = card;
-
-      const cardElem = document.getElementById('flashcard');
-      cardElem.classList.remove('flipped');
-
-      document.getElementById('card-type').textContent = card.type || 'Vocabulaire';
-      document.getElementById('de-text').textContent = card.de;
-      
-      const exampleWrapper = document.getElementById('example-wrapper');
-      if (card.example) {
-        document.getElementById('example-text').textContent = `Ex: "${card.example}"`;
-        exampleWrapper.style.display = "flex";
-      } else {
-        exampleWrapper.style.display = "none";
-      }
-
-      document.getElementById('fr-text').textContent = card.fr;
-
-      document.querySelectorAll('.btn-rank').forEach(btn => btn.classList.remove('active'));
-      const score = card.score || 1;
-      const activeBtn = document.querySelector(`.btn-rank.r5` === `.r${score}` ? `.btn-rank.r5` : `.btn-rank.r${score}`);
-      if (activeBtn) activeBtn.classList.add('active');
-    }
-
-    function nextCard() {
-      window.speechSynthesis.cancel(); // Stoppe la lecture en cours au changement de carte
-      const card = getRandomCard();
-      displayCard(card);
-    }
-
-    function rateCard(score) {
-      if (!currentCard) return;
-      currentCard.score = score;
-      const storageKey = `flashcards_${fileName.replace(/\s+/g, '_')}`;
-      saveToLocalStorage(storageKey);
-      
-      document.querySelectorAll('.btn-rank').forEach(btn => btn.classList.remove('active'));
-      document.querySelector(`.btn-rank.r${score}`).classList.add('active');
-
-      setTimeout(nextCard, 250);
-    }
-
-    function speakText(text) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
-      utterance.lang = 'de-DE';
-      utterance.rate = 0.9; // Vitesse légèrement ajustée pour bien articuler
-      window.speechSynthesis.speak(utterance);
-    }
-
-    // Retourner la carte au clic (hors boutons audio)
-    document.getElementById('card-container').addEventListener('click', function(e) {
-      if (e.target.closest('.btn-audio')) return;
-      document.getElementById('flashcard').classList.toggle('flipped');
-    });
-
-    // Audio pour le mot principal
-    document.getElementById('btn-audio-word').addEventListener('click', function(e) {
-      e.stopPropagation();
-      if (currentCard && currentCard.de) {
-        speakText(currentCard.de);
-      }
-    });
-
-    // Audio pour la phrase d'exemple
-    document.getElementById('btn-audio-example').addEventListener('click', function(e) {
-      e.stopPropagation();
-      if (currentCard && currentCard.example) {
-        speakText(currentCard.example);
-      }
-    });
-
-    document.getElementById('btn-next').addEventListener('click', nextCard);
-
-    loadThemeData();
+    loadManifest();
   </script>
 </body>
 </html>
