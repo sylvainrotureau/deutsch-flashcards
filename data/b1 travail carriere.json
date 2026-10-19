@@ -1,34 +1,402 @@
 [
   {
-    "id": 301,
+    "id": 1,
     "de": "sich bewerben um (+ Akk.)",
     "fr": "postuler à / poser sa candidature pour",
     "type": "Verbe à préposition",
-    "example": "Ich bewerbe mich um eine Stelle als Webentwickler.",
+    "example": "Ich bewerbe mich um eine Stelle als IT-Techniker.",
     "score": 1
   },
   {
-    "id": 302,
+    "id": 2,
+    "de": "die Bewerbung / die Bewerbungsunterlagen",
+    "fr": "la candidature / le dossier de candidature",
+    "type": "Nom (f / Pl.)",
+    "example": "Ich habe meine Bewerbungsunterlagen per E-Mail verschickt.",
+    "score": 1
+  },
+  {
+    "id": 3,
+    "de": "der Lebenslauf",
+    "fr": "le curriculum vitae (CV)",
+    "type": "Nom (m)",
+    "example": "Mein Lebenslauf enthält alle bisherigen Berufserfahrungen.",
+    "score": 1
+  },
+  {
+    "id": 4,
+    "de": "das Anschreiben / das Bewerbungsschreiben",
+    "fr": "la lettre de motivation",
+    "type": "Nom (n)",
+    "example": "Im Anschreiben erkläre ich meine Motivation für die Stelle.",
+    "score": 1
+  },
+  {
+    "id": 5,
     "de": "das Vorstellungsgespräch",
     "fr": "l'entretien d'embauche",
-    "type": "Nom",
-    "example": "Das Vorstellungsgespräch war sehr erfolgreich.",
+    "type": "Nom (n)",
+    "example": "Das Vorstellungsgespräch verlief sehr positiv und professionell.",
     "score": 1
   },
   {
-    "id": 303,
+    "id": 6,
+    "de": "die Stellenanzeige / das Stellenangebot",
+    "fr": "l'offre d'emploi",
+    "type": "Nom (f/n)",
+    "example": "Ich habe eine interessante Stellenanzeige im Internet gefunden.",
+    "score": 1
+  },
+  {
+    "id": 7,
+    "de": "der Arbeitgeber / die Arbeitgeberin",
+    "fr": "l'employeur / l'employeuse",
+    "type": "Nom (m/f)",
+    "example": "Mein neuer Arbeitgeber bietet sehr gute Sozialleistungen.",
+    "score": 1
+  },
+  {
+    "id": 8,
+    "de": "der Arbeitnehmer / die Arbeitnehmerin",
+    "fr": "le salarié / la salariée",
+    "type": "Nom (m/f)",
+    "example": "Die Rechte der Arbeitnehmer sind im Gesetz geregelt.",
+    "score": 1
+  },
+  {
+    "id": 9,
+    "de": "der Arbeitsvertrag unterschreiben",
+    "fr": "signer le contrat de travail",
+    "type": "Expression",
+    "example": "Morgen werde ich meinen neuen Arbeitsvertrag unterschreiben.",
+    "score": 1
+  },
+  {
+    "id": 10,
+    "de": "die Probezeit",
+    "fr": "la période d'essai",
+    "type": "Nom (f)",
+    "example": "Die Probezeit dauert in der Regel sechs Monate.",
+    "score": 1
+  },
+  {
+    "id": 11,
+    "de": "einstellen / beschäftigen",
+    "fr": "embaucher / employer",
+    "type": "Verbe",
+    "example": "Die Firma möchte drei neue Mitarbeiter einstellen.",
+    "score": 1
+  },
+  {
+    "id": 12,
+    "de": "kündigen / die Kündigung",
+    "fr": "démissionner (ou licencier) / la démission (ou licenciement)",
+    "type": "Verbe / Nom (f)",
+    "example": "Er hat seine Kündigung eingereicht, um eine neue Stelle anzutreten.",
+    "score": 1
+  },
+  {
+    "id": 13,
+    "de": "arbeitslos sein / die Arbeitslosigkeit",
+    "fr": "être au chômage / le chômage",
+    "type": "Expression / Nom (f)",
+    "example": "Nach der Ausbildung war er leider zwei Monate arbeitslos.",
+    "score": 1
+  },
+  {
+    "id": 14,
+    "de": "die Agentur für Arbeit / das Arbeitsamt",
+    "fr": "l'agence pour l'emploi (Pôle Emploi / France Travail)",
+    "type": "Nom (f/n)",
+    "example": "Sie hat sich bei der Agentur für Arbeit arbeitssuchend gemeldet.",
+    "score": 1
+  },
+  {
+    "id": 15,
+    "de": "das Gehalt / der Lohn",
+    "fr": "le salaire",
+    "type": "Nom (n/m)",
+    "example": "Das Gehalt wird am Ende des Monats auf das Konto überwiesen.",
+    "score": 1
+  },
+  {
+    "id": 16,
+    "de": "die Gehaltserhöhung",
+    "fr": "l'augmentation de salaire",
+    "type": "Nom (f)",
+    "example": "Nach einem Jahr im Betrieb verhandelt er über eine Gehaltserhöhung.",
+    "score": 1
+  },
+  {
+    "id": 17,
+    "de": "brutto / netto",
+    "fr": "brut / net",
+    "type": "Adjectif",
+    "example": "Vom Bruttogehalt werden noch Steuern und Abgaben abgezogen.",
+    "score": 1
+  },
+  {
+    "id": 18,
+    "de": "die Vollzeitstelle / die Teilzeitstelle",
+    "fr": "le poste à plein temps / à temps partiel",
+    "type": "Nom (f)",
+    "example": "Sie arbeitet in Teilzeit, um mehr Zeit für die Familie zu haben.",
+    "score": 1
+  },
+  {
+    "id": 19,
+    "de": "die Überstunden (Pl.) machen",
+    "fr": "faire des heures supplémentaires",
+    "type": "Expression",
+    "example": "Wegen des dringenden Projekts müssen wir derzeit Überstunden machen.",
+    "score": 1
+  },
+  {
+    "id": 20,
+    "de": "gleitende Arbeitszeit / die Gleitzeit",
+    "fr": "les horaires flexibles / le temps flexible",
+    "type": "Nom (f)",
+    "example": "Dank Gleitzeit kann ich morgens zwischen 7 und 9 Uhr anfangen.",
+    "score": 1
+  },
+  {
+    "id": 21,
+    "de": "das Homeoffice / die Telearbeit",
+    "fr": "le télétravail",
+    "type": "Nom (n/f)",
+    "example": "Zweimal pro Woche arbeite ich im Homeoffice.",
+    "score": 1
+  },
+  {
+    "id": 22,
+    "de": "der Kollege / die Kollegin",
+    "fr": "le collègue / la collègue",
+    "type": "Nom (m/f)",
+    "example": "Ich verstehe mich sehr gut mit meinen Kollegen.",
+    "score": 1
+  },
+  {
+    "id": 23,
+    "de": "der Vorgesetzte / die Vorgesetzte",
+    "fr": "le supérieur hiérarchique / la supérieure",
+    "type": "Nom (m/f)",
+    "example": "Die Vorgesetzte leitet das wöchentliche Teammeeting.",
+    "score": 1
+  },
+  {
+    "id": 24,
+    "de": "die Abteilung",
+    "fr": "le service / le département",
+    "type": "Nom (f)",
+    "example": "Er arbeitet seit fünf Jahren in der Marketingabteilung.",
+    "score": 1
+  },
+  {
+    "id": 25,
     "de": "Verantwortung übernehmen",
     "fr": "prendre des responsabilités",
     "type": "Expression",
-    "example": "In meiner neuen Rolle muss ich mehr Verantwortung übernehmen.",
+    "example": "Als Teamleiter muss man viel Verantwortung übernehmen.",
     "score": 1
   },
   {
-    "id": 304,
-    "de": "die Überstunden",
-    "fr": "les heures supplémentaires",
-    "type": "Nom",
-    "example": "Diese Woche habe ich viele Überstunden gemacht.",
+    "id": 26,
+    "de": "zuständig sein für (+ Akk.)",
+    "fr": "être responsable de / chargé de",
+    "type": "Expression",
+    "example": "Frau Müller ist für den Kundenservice zuständig.",
+    "score": 1
+  },
+  {
+    "id": 27,
+    "de": "die Aufgabe / die Pflicht",
+    "fr": "la tâche / le devoir",
+    "type": "Nom (f)",
+    "example": "Zu meinen Hauptaufgaben gehört die Betreuung der Website.",
+    "score": 1
+  },
+  {
+    "id": 28,
+    "de": "das Projekt leiten",
+    "fr": "diriger / gérer le projet",
+    "type": "Expression",
+    "example": "Er leitet das internationale Softwareprojekt.",
+    "score": 1
+  },
+  {
+    "id": 29,
+    "de": "die Frist einhalten",
+    "fr": "respecter le délai",
+    "type": "Expression",
+    "example": "Wir müssen die Frist bis Freitag unbedingt einhalten.",
+    "score": 1
+  },
+  {
+    "id": 30,
+    "de": "der Termin verschieben / absagen",
+    "fr": "déplacer / annuler le rendez-vous",
+    "type": "Expression",
+    "example": "Können wir das Meeting auf morgen Nachmittag verschieben?",
+    "score": 1
+  },
+  {
+    "id": 31,
+    "de": "die Geschäftsreise / die Dienstreise",
+    "fr": "le voyage d'affaires / la mission",
+    "type": "Nom (f)",
+    "example": "Nächste Woche fahre ich auf Geschäftsreise nach München.",
+    "score": 1
+  },
+  {
+    "id": 32,
+    "de": "die Besprechung / die Tagung",
+    "fr": "la réunion / la conférence",
+    "type": "Nom (f)",
+    "example": "In der Besprechung besprechen wir die neuen Ziele.",
+    "score": 1
+  },
+  {
+    "id": 33,
+    "de": "das Protokoll schreiben",
+    "fr": "rédiger le compte-rendu / le procès-verbal",
+    "type": "Expression",
+    "example": "Wer schreibt heute während der Sitzung das Protokoll?",
+    "score": 1
+  },
+  {
+    "id": 34,
+    "de": "die Berufserfahrung",
+    "fr": "l'expérience professionnelle",
+    "type": "Nom (f)",
+    "example": "Für diese Stelle sind mindestens drei Jahre Berufserfahrung erforderlich.",
+    "score": 1
+  },
+  {
+    "id": 35,
+    "de": "die Aus- und Weiterbildung",
+    "fr": "la formation initiale et continue",
+    "type": "Nom (f)",
+    "example": "Das Unternehmen legt großen Wert auf die Weiterbildung der Mitarbeiter.",
+    "score": 1
+  },
+  {
+    "id": 36,
+    "de": "die Schulung / das Seminar",
+    "fr": "la formation / le séminaire",
+    "type": "Nom (f/n)",
+    "example": "Ich nehme an einer Schulung für neue Software teil.",
+    "score": 1
+  },
+  {
+    "id": 37,
+    "de": "das Praktikum / der Praktikant",
+    "fr": "le stage / le stagiaire",
+    "type": "Nom (n/m)",
+    "example": "Während des Studiums hat sie ein Praktikum im Ausland gemacht.",
+    "score": 1
+  },
+  {
+    "id": 38,
+    "de": "das Arbeitszeugnis",
+    "fr": "le certificat de travail (avec appréciation)",
+    "type": "Nom (n)",
+    "example": "Nach dem Abschied erhielt er ein sehr gutes Arbeitszeugnis.",
+    "score": 1
+  },
+  {
+    "id": 39,
+    "de": "die Beförderung / befördert werden",
+    "fr": "la promotion / être promu",
+    "type": "Nom (f) / Expression",
+    "example": "Wegen seiner guten Leistungen wurde er zum Abteilungsleiter befördert.",
+    "score": 1
+  },
+  {
+    "id": 40,
+    "de": "die Karrieremöglichkeiten (Pl.)",
+    "fr": "les perspectives de carrière",
+    "type": "Nom (Pluriel)",
+    "example": "Diese Firma bietet hervorragende Karrieremöglichkeiten.",
+    "score": 1
+  },
+  {
+    "id": 41,
+    "de": "der Tarifvertrag",
+    "fr": "la convention collective",
+    "type": "Nom (m)",
+    "example": "Die Löhne sind im Tarifvertrag der Branche festgelegt.",
+    "score": 1
+  },
+  {
+    "id": 42,
+    "de": "der Betriebsrat",
+    "fr": "le comité d'entreprise / le conseil d'entreprise",
+    "type": "Nom (m)",
+    "example": "Der Betriebsrat vertritt die Interessen der Beschäftigten.",
+    "score": 1
+  },
+  {
+    "id": 43,
+    "de": "der Streik / streiken",
+    "fr": "la grève / faire la grève",
+    "type": "Nom (m) / Verbe",
+    "example": "Wegen des Streiks fährt heute kein Zug.",
+    "score": 1
+  },
+  {
+    "id": 44,
+    "de": "der Urlaubsanspruch",
+    "fr": "le droit aux congés payés",
+    "type": "Nom (m)",
+    "example": "Mein gesetzlicher Urlaubsanspruch beträgt 30 Tage im Jahr.",
+    "score": 1
+  },
+  {
+    "id": 45,
+    "de": "Urlaub beantragen / genehmigen",
+    "fr": "demander / accorder des congés",
+    "type": "Expression",
+    "example": "Der Chef hat meinen Sommerurlaub sofort genehmigt.",
+    "score": 1
+  },
+  {
+    "id": 46,
+    "de": "der Mutterschutz / die Elternzeit",
+    "fr": "le congé maternité / le congé parental",
+    "type": "Nom (m/f)",
+    "example": "Er nimmt nach der Geburt des Kindes zwei Monate Elternzeit.",
+    "score": 1
+  },
+  {
+    "id": 47,
+    "de": "die Selbstständigkeit / freiberuflich",
+    "fr": "le travail indépendant / freelance",
+    "type": "Nom (f) / Adjectif",
+    "example": "Sie hat den Schritt in die Selbstständigkeit gewagt.",
+    "score": 1
+  },
+  {
+    "id": 48,
+    "de": "sich selbstständig machen",
+    "fr": "s'installer à son compte",
+    "type": "Expression",
+    "example": "Er möchte sich als Berater selbstständig machen.",
+    "score": 1
+  },
+  {
+    "id": 49,
+    "de": "die Work-Life-Balance",
+    "fr": "l'équilibre entre vie professionnelle et vie privée",
+    "type": "Nom (f)",
+    "example": "Eine gute Work-Life-Balance schützt vor Burnout.",
+    "score": 1
+  },
+  {
+    "id": 50,
+    "de": "der Ruhestand / in Rente gehen",
+    "fr": "la retraite / partir à la retraite",
+    "type": "Nom (m) / Expression",
+    "example": "Mein Kollege geht Ende des Jahres in den Ruhestand.",
     "score": 1
   }
 ]
