@@ -26,5 +26,12 @@
     "description": "Exprimer son opinion, débattre, faits de société.",
     "level": "B1",
     "icon": "fa-comments"
-  }
+  }, 
+  {
+  "filename": "a2 b1 vie quotidienne habitation.json",
+  "title": "Vie quotidienne & Logement",
+  "description": "Routine, tâches ménagères, logement, bail et vie de quartier (50 cartes).",
+  "level": "A2-B1",
+  "icon": "fa-house-user"
+}
 ]
