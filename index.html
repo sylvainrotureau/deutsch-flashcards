@@ -3,49 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vocabulaire Allemand A2 - B1 | Sommaire</title>
+  <title>Vocabulaire Allemand | Sommaire</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <header class="header">
-      <h1><i class="fa-solid fa-graduation-cap"></i> Deutsch Lernen : A2 - B1</h1>
+      <h1><i class="fa-solid fa-graduation-cap"></i> Deutsch Lernen</h1>
       <p>Choisissez un thème pour commencer votre session de révision</p>
     </header>
 
     <main id="themes-container">
-      <!-- Les thèmes seront injectés dynamiquement ici -->
       <p style="text-align: center; color: var(--text-muted);">Chargement des fiches...</p>
     </main>
   </div>
 
   <script>
     async function loadManifest() {
+      const container = document.getElementById('themes-container');
       try {
-        const response = await fetch('data/manifest.json');
-        const themes = await response.json();
+        // Ajout d'un paramètre anti-cache pour toujours lire le manifest à jour
+        const response = await fetch('data/manifest.json?v=' + Date.now());
+        if (!response.ok) throw new Error("Impossible de charger manifest.json");
         
-        const container = document.getElementById('themes-container');
-        container.innerHTML = ''; // Nettoyer le message de chargement
+        const themes = await response.json();
+        container.innerHTML = ''; 
 
-        // Regrouper par niveau (A2, B1, etc.)
+        // Regrouper par niveau
         const levels = {};
         themes.forEach(theme => {
-          if (!levels[theme.level]) levels[theme.level] = [];
-          levels[theme.level].push(theme);
+          const lvl = theme.level || 'Général';
+          if (!levels[lvl]) levels[lvl] = [];
+          levels[lvl].push(theme);
         });
 
-        // Générer le HTML par niveau
+        // Générer le HTML
         for (const [level, items] of Object.entries(levels)) {
           let sectionHTML = `
             <section class="level-section">
-              <h2 class="badge-level level-${level.toLowerCase()}">Niveau ${level}</h2>
+              <h2 class="badge-level level-${level.toLowerCase().replace(/[^a-z0-9]/g, '')}">Niveau ${level}</h2>
               <div class="cards-grid">
           `;
 
           items.forEach(theme => {
-            // On passe le nom du fichier sans extension dans l'URL
             const fileParam = encodeURIComponent(theme.filename);
             sectionHTML += `
               <a href="app.html?theme=${fileParam}" class="theme-card">
@@ -64,8 +65,12 @@
         }
 
       } catch (error) {
-        document.getElementById('themes-container').innerHTML = `
-          <p style="text-align: center; color: #ef4444;">Erreur de chargement du manifeste des thèmes. Assurez-vous d'utiliser un serveur local (Live Server).</p>
+        container.innerHTML = `
+          <div style="text-align: center; color: #ef4444; padding: 20px;">
+            <i class="fa-solid fa-circle-exclamation" style="font-size: 2rem; margin-bottom: 10px;"></i>
+            <p><strong>Erreur de chargement du sommaire</strong></p>
+            <p style="font-size: 0.9rem;">Vérifiez que le fichier <code>data/manifest.json</code> ne contient pas d'erreur de syntaxe JSON.</p>
+          </div>
         `;
         console.error("Erreur manifeste :", error);
       }
