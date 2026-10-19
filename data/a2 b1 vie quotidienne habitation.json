@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "de": "aufstehen",
+    "fr": "se lever",
+    "type": "Verbe séparable",
+    "example": "Ich stehe jeden Tag um 7 Uhr morgens auf.",
+    "score": 1
+  },
+  {
+    "id": 2,
+    "de": "aufwachen",
+    "fr": "s'réveiller",
+    "type": "Verbe intransitif",
+    "example": "Am Wochenende wache ich oft erst um 9 Uhr auf.",
+    "score": 1
+  },
+  {
+    "id": 3,
+    "de": "sich duschen",
+    "fr": "se doucher",
+    "type": "Verbe réfléchi",
+    "example": "Nach dem Sport dusche ich mich sofort.",
+    "score": 1
+  },
+  {
+    "id": 4,
+    "de": "sich die Zähne putzen",
+    "fr": "se laver les dents",
+    "type": "Expression",
+    "example": "Er putzt sich nach dem Frühstück die Zähne.",
+    "score": 1
+  },
+  {
+    "id": 5,
+    "de": "sich anziehen",
+    "fr": "s'habiller",
+    "type": "Verbe réfléchi",
+    "example": "Ich ziehe mich schnell an, bevor ich zur Arbeit gehe.",
+    "score": 1
+  },
+  {
+    "id": 6,
+    "de": "das Frühstück zubereiten",
+    "fr": "préparer le petit-déjeuner",
+    "type": "Expression",
+    "example": "Sie bereitet jeden Morgen das Frühstück für die Familie zu.",
+    "score": 1
+  },
+  {
+    "id": 7,
+    "de": "das Haus verlassen",
+    "fr": "quitter la maison",
+    "type": "Expression",
+    "example": "Um 8 Uhr verlasse ich das Haus.",
+    "score": 1
+  },
+  {
+    "id": 8,
+    "de": "zur Arbeit pendeln",
+    "fr": "faire le trajet domicile-travail",
+    "type": "Verbe",
+    "example": "Viele Menschen pendeln täglich mit dem Zug.",
+    "score": 1
+  },
+  {
+    "id": 9,
+    "de": "Einkäufe erledigen",
+    "fr": "faire les courses",
+    "type": "Expression",
+    "example": "Am Samstagnachmittag erledigen wir meistens die Einkäufe.",
+    "score": 1
+  },
+  {
+    "id": 10,
+    "de": "das Geschirr spülen",
+    "fr": "faire la vaisselle",
+    "type": "Expression",
+    "example": "Wer spült heute nach dem Abendessen das Geschirr?",
+    "score": 1
+  },
+  {
+    "id": 11,
+    "de": "die Spülmaschine einräumen",
+    "fr": "remplir le lave-vaisselle",
+    "type": "Expression",
+    "example": "Kannst du bitte die Spülmaschine einräumen?",
+    "score": 1
+  },
+  {
+    "id": 12,
+    "de": "die Wäsche waschen",
+    "fr": "faire la lessive",
+    "type": "Expression",
+    "example": "Ich muss heute unbedingt die Wäsche waschen.",
+    "score": 1
+  },
+  {
+    "id": 13,
+    "de": "Wäsche aufhängen",
+    "fr": "étendre le linge",
+    "type": "Expression",
+    "example": "Im Sommer hänge ich die Wäsche draußen im Garten auf.",
+    "score": 1
+  },
+  {
+    "id": 14,
+    "de": "Staub saugen",
+    "fr": "passer l'aspirateur",
+    "type": "Verbe / Expression",
+    "example": "Er saugt zweimal pro Woche im Wohnzimmer Staub.",
+    "score": 1
+  },
+  {
+    "id": 15,
+    "de": "die Wohnung aufräumen",
+    "fr": "ranger l'appartement",
+    "type": "Expression",
+    "example": "Vor dem Besuch müssen wir noch die Wohnung aufräumen.",
+    "score": 1
+  },
+  {
+    "id": 16,
+    "de": "den Müll rausbringen",
+    "fr": "sortir les poubelles",
+    "type": "Expression",
+    "example": "Vergiss bitte nicht, am Abend den Müll rauszubringen.",
+    "score": 1
+  },
+  {
+    "id": 17,
+    "de": "sich ausruhen",
+    "fr": "se reposer",
+    "type": "Verbe réfléchi",
+    "example": "Nach einem langen Arbeitstag ruhe ich mich auf dem Sofa aus.",
+    "score": 1
+  },
+  {
+    "id": 18,
+    "de": "einschlafen",
+    "fr": "s'endormir",
+    "type": "Verbe séparable",
+    "example": "Ich bin gestern sehr spät eingeschlafen.",
+    "score": 1
+  },
+  {
+    "id": 19,
+    "de": "die Mietwohnung",
+    "fr": "l'appartement en location",
+    "type": "Nom (f)",
+    "example": "Wir suchen eine helle Mietwohnung im Stadtzentrum.",
+    "score": 1
+  },
+  {
+    "id": 20,
+    "de": "die Warmmiete / die Kaltmiete",
+    "fr": "le loyer charges comprises / hors charges",
+    "type": "Nom (f)",
+    "example": "Die Kaltmiete beträgt 600 Euro, dazu kommen noch die Nebenkosten.",
+    "score": 1
+  },
+  {
+    "id": 21,
+    "de": "die Nebenkosten (Pl.)",
+    "fr": "les charges (eau, chauffage, etc.)",
+    "type": "Nom (Pluriel)",
+    "example": "In den Nebenkosten sind Wasser und Heizung enthalten.",
+    "score": 1
+  },
+  {
+    "id": 22,
+    "de": "die Kaution Hinterlegen",
+    "fr": "déposer la caution",
+    "type": "Expression",
+    "example": "Der Mieter muss vor dem Einzug drei Monatsmieten als Kaution hinterlegen.",
+    "score": 1
+  },
+  {
+    "id": 23,
+    "de": "der Mietvertrag",
+    "fr": "le contrat de location / bail",
+    "type": "Nom (m)",
+    "example": "Wir haben gestern den Mietvertrag unterschrieben.",
+    "score": 1
+  },
+  {
+    "id": 24,
+    "de": "der Vermieter / die Vermieterin",
+    "fr": "le propriétaire / la propriétaire",
+    "type": "Nom (m/f)",
+    "example": "Unsere Vermieterin ist sehr freundlich und hilfsbereit.",
+    "score": 1
+  },
+  {
+    "id": 25,
+    "de": "der Mieter / die Mieterin",
+    "fr": "le locataire / la locataire",
+    "type": "Nom (m/f)",
+    "example": "Die neuen Mieter ziehen nächsten Monat ein.",
+    "score": 1
+  },
+  {
+    "id": 26,
+    "de": "umziehen",
+    "fr": "déménager",
+    "type": "Verbe intransitif",
+    "example": "Nächste Woche ziehen wir in eine größere Wohnung um.",
+    "score": 1
+  },
+  {
+    "id": 27,
+    "de": "der Umzug",
+    "fr": "le déménagement",
+    "type": "Nom (m)",
+    "example": "Der Umzug war sehr anstrengend, aber alles hat gut geklappt.",
+    "score": 1
+  },
+  {
+    "id": 28,
+    "de": "die Möbel aufbauen",
+    "fr": "monter les meubles",
+    "type": "Expression",
+    "example": "Am Wochenende bauen wir die neuen Regale auf.",
+    "score": 1
+  },
+  {
+    "id": 29,
+    "de": "das Wohnzimmer",
+    "fr": "le salon / la salle de séjour",
+    "type": "Nom (n)",
+    "example": "Im Wohnzimmer steht ein großes, bequemes Sofa.",
+    "score": 1
+  },
+  {
+    "id": 30,
+    "de": "das Schlafzimmer",
+    "fr": "la chambre à coucher",
+    "type": "Nom (n)",
+    "example": "Das Schlafzimmer liegt ruhig nach hinten zum Garten.",
+    "score": 1
+  },
+  {
+    "id": 31,
+    "de": "die Einbauküche",
+    "fr": "la cuisine équipée",
+    "type": "Nom (f)",
+    "example": "Die Wohnung verfügt über eine moderne Einbauküche.",
+    "score": 1
+  },
+  {
+    "id": 32,
+    "de": "das Badezimmer",
+    "fr": "la salle de bains",
+    "type": "Nom (n)",
+    "example": "Das Badezimmer hat eine Dusche und ein Fenster.",
+    "score": 1
+  },
+  {
+    "id": 33,
+    "de": "der Flur / der Eingangsbereich",
+    "fr": "le couloir / l'entrée",
+    "type": "Nom (m)",
+    "example": "Im Flur hängen die Mäntel und Jacken an der Garderobe.",
+    "score": 1
+  },
+  {
+    "id": 34,
+    "de": "der Balkon",
+    "fr": "le balcon",
+    "type": "Nom (m)",
+    "example": "Im Sommer frühstücken wir gerne auf dem Balkon.",
+    "score": 1
+  },
+  {
+    "id": 35,
+    "de": "der Keller",
+    "fr": "la cave",
+    "type": "Nom (m)",
+    "example": "Fahrräder und alte Kartons lagern wir im Keller.",
+    "score": 1
+  },
+  {
+    "id": 36,
+    "de": "das Dachgeschoss",
+    "fr": "le dernier étage / les combles",
+    "type": "Nom (n)",
+    "example": "Sie wohnen im Dachgeschoss mit schöner Aussicht.",
+    "score": 1
+  },
+  {
+    "id": 37,
+    "de": "der Aufzug / der Fahrstuhl",
+    "fr": "l'ascenseur",
+    "type": "Nom (m)",
+    "example": "Da der Aufzug kaputt ist, nehmen wir die Treppe.",
+    "score": 1
+  },
+  {
+    "id": 38,
+    "de": "gemütlich",
+    "fr": "confortable / chaleureux / douillet",
+    "type": "Adjectif",
+    "example": "Das kleine Café ist wirklich sehr gemütlich.",
+    "score": 1
+  },
+  {
+    "id": 39,
+    "de": "geräumig",
+    "fr": "spacieux",
+    "type": "Adjectif",
+    "example": "Das Esszimmer ist hell und geräumig.",
+    "score": 1
+  },
+  {
+    "id": 40,
+    "de": "möbliert",
+    "fr": "meublé",
+    "type": "Adjectif",
+    "example": "Studenten suchen oft nach möblierten Zimmern.",
+    "score": 1
+  },
+  {
+    "id": 41,
+    "de": "zentral gelegen",
+    "fr": "bien situé / au centre",
+    "type": "Adjectif",
+    "example": "Die Wohnung ist zentral gelegen und gut angebunden.",
+    "score": 1
+  },
+  {
+    "id": 42,
+    "de": "die Anbindung an die öffentlichen Verkehrsmittel",
+    "fr": "la desserte par les transports en commun",
+    "type": "Nom (f)",
+    "example": "Die Anbindung an die U-Bahn ist perfekt.",
+    "score": 1
+  },
+  {
+    "id": 43,
+    "de": "die Hausordnung einhalten",
+    "fr": "respecter le règlement d'immeuble",
+    "type": "Expression",
+    "example": "Alle Bewohner müssen die Hausordnung einhalten.",
+    "score": 1
+  },
+  {
+    "id": 44,
+    "de": "die Ruhezeit beachten",
+    "fr": "respecter les heures de repos (22h-6h)",
+    "type": "Expression",
+    "example": "Ab 22 Uhr gilt im Haus die nächtliche Ruhezeit.",
+    "score": 1
+  },
+  {
+    "id": 45,
+    "de": "der Nachbar / die Nachbarin",
+    "fr": "le voisin / la voisine",
+    "type": "Nom (m/f)",
+    "example": "Unsere Nachbarn sind sehr leise und höflich.",
+    "score": 1
+  },
+  {
+    "id": 46,
+    "de": "sich beschweren über (+ Akk.)",
+    "fr": "se plaindre de",
+    "type": "Verbe réfléchi",
+    "example": "Der Nachbar beschwert sich über die laute Musik.",
+    "score": 1
+  },
+  {
+    "id": 47,
+    "de": "lüften",
+    "fr": "aérer",
+    "type": "Verbe",
+    "example": "Man sollte täglich mindestens zweimal stoßlüften.",
+    "score": 1
+  },
+  {
+    "id": 48,
+    "de": "die Heizung aufdrehen / abdrehen",
+    "fr": "monter / couper le chauffage",
+    "type": "Verbe séparable",
+    "example": "Im Winter drehe ich morgens die Heizung auf.",
+    "score": 1
+  },
+  {
+    "id": 49,
+    "de": "der Energieverbrauch",
+    "fr": "la consommation d'énergie",
+    "type": "Nom (m)",
+    "example": "Wir versuchen, unseren Energieverbrauch zu senken.",
+    "score": 1
+  },
+  {
+    "id": 50,
+    "de": "sich wie zu Hause fühlen",
+    "fr": "se sentir comme chez soi",
+    "type": "Expression",
+    "example": "In der neuen Stadt fühle ich mich schon wie zu Hause.",
+    "score": 1
+  }
+]
