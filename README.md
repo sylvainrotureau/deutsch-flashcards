@@ -1,2 +1,0 @@
-# deutsch-flashcards
-deutsch-flashcards
