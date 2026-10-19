@@ -1,26 +1,402 @@
 [
   {
-    "id": 201,
+    "id": 1,
     "de": "der Termin beim Arzt",
     "fr": "le rendez-vous chez le médecin",
     "type": "Expression",
-    "example": "Ich habe morgen einen Termin beim Arzt.",
+    "example": "Ich habe morgen um 10 Uhr einen Termin beim Arzt.",
     "score": 1
   },
   {
-    "id": 202,
+    "id": 2,
     "de": "weh tun",
     "fr": "faire mal / douloir",
-    "type": "Verbe",
-    "example": "Mein Kopf tut seit heute Morgen weh.",
+    "type": "Verbe séparable",
+    "example": "Mein Kopf tut seit heute Morgen sehr weh.",
     "score": 1
   },
   {
-    "id": 203,
-    "de": "das Medikament einnehmen",
+    "id": 3,
+    "de": "die Schmerzen (Pl.)",
+    "fr": "les douleurs",
+    "type": "Nom (Pluriel)",
+    "example": "Haben Sie starke Schmerzen im Rücken?",
+    "score": 1
+  },
+  {
+    "id": 4,
+    "de": "das Fieber messen",
+    "fr": "prendre / mesurer la fièvre",
+    "type": "Expression",
+    "example": "Die Mutter misst bei dem kranken Kind das Fieber.",
+    "score": 1
+  },
+  {
+    "id": 5,
+    "de": "der Husten und der Schnupfen",
+    "fr": "la toux et le rhume",
+    "type": "Nom (m/m)",
+    "example": "Im Winter habe ich oft Husten und Schnupfen.",
+    "score": 1
+  },
+  {
+    "id": 6,
+    "de": "sich erkälten",
+    "fr": "attraper un rhume / prendre froid",
+    "type": "Verbe réfléchi",
+    "example": "Zieh dich warm an, damit du dich nicht erkältest!",
+    "score": 1
+  },
+  {
+    "id": 7,
+    "de": "die Erkältung / die Grippe",
+    "fr": "le rhume / la grippe",
+    "type": "Nom (f)",
+    "example": "Er liegt mit einer schweren Grippe im Bett.",
+    "score": 1
+  },
+  {
+    "id": 8,
+    "de": "die Arztpraxis / das Krankenhaus",
+    "fr": "le cabinet médical / l'hôpital",
+    "type": "Nom (f/n)",
+    "example": "Die Praxis ist am Mittwochnachmittag geschlossen.",
+    "score": 1
+  },
+  {
+    "id": 9,
+    "de": "der Hausarzt / die Hausärztin",
+    "fr": "le médecin traitant",
+    "type": "Nom (m/f)",
+    "example": "Bei Fieber gehe ich zuerst zu meinem Hausarzt.",
+    "score": 1
+  },
+  {
+    "id": 10,
+    "de": "der Facharzt / der Zahnarzt",
+    "fr": "le médecin spécialiste / le dentiste",
+    "type": "Nom (m)",
+    "example": "Ich gehe zweimal im Jahr zum Zahnarzt zur Kontrolle.",
+    "score": 1
+  },
+  {
+    "id": 11,
+    "de": "untersuchen",
+    "fr": "examiner (médicalement)",
+    "type": "Verbe",
+    "example": "Der Arzt untersucht den Patienten gründlich.",
+    "score": 1
+  },
+  {
+    "id": 12,
+    "de": "die Diagnose stellen",
+    "fr": "poser un diagnostic",
+    "type": "Expression",
+    "example": "Nach den Blutwerten konnte der Arzt eine Diagnose stellen.",
+    "score": 1
+  },
+  {
+    "id": 13,
+    "de": "das Rezept verschreiben",
+    "fr": "prescrire une ordonnance",
+    "type": "Expression",
+    "example": "Der Arzt verschreibt mir ein Rezept für Antibiotika.",
+    "score": 1
+  },
+  {
+    "id": 14,
+    "de": "die Apotheke",
+    "fr": "la pharmacie",
+    "type": "Nom (f)",
+    "example": "Ich hole das Medikament gleich aus der Apotheke ab.",
+    "score": 1
+  },
+  {
+    "id": 15,
+    "de": "das Medikament / die Arznei einnehmen",
     "fr": "prendre le médicament",
     "type": "Expression",
-    "example": "Sie müssen dieses Medikament dreimal täglich einnehmen.",
+    "example": "Nehmen Sie dieses Medikament bitte nach dem Essen ein.",
+    "score": 1
+  },
+  {
+    "id": 16,
+    "de": "die Schmerztablette",
+    "fr": "le comprimé anti-douleur / l'analgésique",
+    "type": "Nom (f)",
+    "example": "Gegen die Zahnschmerzen hat sie eine Tablette genommen.",
+    "score": 1
+  },
+  {
+    "id": 17,
+    "de": "die Nebenwirkung / die Packungsbeilage",
+    "fr": "l'effet secondaire / la notice d'emballage",
+    "type": "Nom (f)",
+    "example": "Lesen Sie die Packungsbeilage und fragen Sie Ihren Arzt.",
+    "score": 1
+  },
+  {
+    "id": 18,
+    "de": "krankschreiben",
+    "fr": "mettre en arrêt maladie",
+    "type": "Verbe séparable",
+    "example": "Der Arzt hat mich für eine Woche krankgeschrieben.",
+    "score": 1
+  },
+  {
+    "id": 19,
+    "de": "die Krankschreibung / das Attest",
+    "fr": "l'arrêt de travail / le certificat médical",
+    "type": "Nom (f/n)",
+    "example": "Ich muss die Krankschreibung meinem Arbeitgeber schicken.",
+    "score": 1
+  },
+  {
+    "id": 20,
+    "de": "die Krankenversicherung",
+    "fr": "l'assurance maladie",
+    "type": "Nom (f)",
+    "example": "In Deutschland ist eine Krankenversicherung gesetzlich vorgeschrieben.",
+    "score": 1
+  },
+  {
+    "id": 21,
+    "de": "die Gesundheitskarte / die Krankenversichertenkarte",
+    "fr": "la carte vitale / carte d'assuré",
+    "type": "Nom (f)",
+    "example": "Bitte zeigen Sie an der Rezeption Ihre Gesundheitskarte vor.",
+    "score": 1
+  },
+  {
+    "id": 22,
+    "de": "der Notfall / der Notarzt",
+    "fr": "l'urgence / le médecin d'urgence",
+    "type": "Nom (m)",
+    "example": "Im Notfall wählen Sie sofort die Nummer 112.",
+    "score": 1
+  },
+  {
+    "id": 23,
+    "de": "der Krankenwagen / der Rettungswagen",
+    "fr": "l'ambulance",
+    "type": "Nom (m)",
+    "example": "Der Krankenwagen war innerhalb von fünf Minuten vor Ort.",
+    "score": 1
+  },
+  {
+    "id": 24,
+    "de": "die Verletzung / sich verletzen",
+    "fr": "la blessure / se blesser",
+    "type": "Nom (f) / Verbe",
+    "example": "Er hat sich beim Fußballspielen am Knie verletzt.",
+    "score": 1
+  },
+  {
+    "id": 25,
+    "de": "das Pflaster / der Verband",
+    "fr": "le pansement / le bandage",
+    "type": "Nom (n/m)",
+    "example": "Können Sie bitte ein Pflaster auf die kleine Wunde kleben?",
+    "score": 1
+  },
+  {
+    "id": 26,
+    "de": "die Salbe / die Creme auftragen",
+    "fr": "appliquer la pommade / la crème",
+    "type": "Expression",
+    "example": "Tragen Sie die Salbe zweimal täglich auf die Haut auf.",
+    "score": 1
+  },
+  {
+    "id": 27,
+    "de": "die Allergie / allergisch sein gegen (+ Akk.)",
+    "fr": "l'allergie / être allergique à",
+    "type": "Nom (f) / Expression",
+    "example": "Ich bin allergisch gegen Pollen und Katzenhaare.",
+    "score": 1
+  },
+  {
+    "id": 28,
+    "de": "die Impfung / sich impfen lassen",
+    "fr": "la vaccination / se faire vacciner",
+    "type": "Nom (f) / Expression",
+    "example": "Die Impfung schützt vor einer schweren Infektion.",
+    "score": 1
+  },
+  {
+    "id": 29,
+    "de": "der Kopf / das Gesicht",
+    "fr": "la tête / le visage",
+    "type": "Nom (m/n)",
+    "example": "Setz eine Mütze auf, damit dein Kopf warm bleibt.",
+    "score": 1
+  },
+  {
+    "id": 30,
+    "de": "das Auge / das Ohr / die Nase",
+    "fr": "l'œil / l'oreille / le nez",
+    "type": "Nom (n/n/f)",
+    "example": "Meine Augen brennen vom langen Arbeiten am Computer.",
+    "score": 1
+  },
+  {
+    "id": 31,
+    "de": "der Hals / der Rücken",
+    "fr": "la gorge (ou le cou) / le dos",
+    "type": "Nom (m)",
+    "example": "Ich habe Halsschmerzen beim Schlucken.",
+    "score": 1
+  },
+  {
+    "id": 32,
+    "de": "der Bauch / der Magen",
+    "fr": "le ventre / l'estomac",
+    "type": "Nom (m)",
+    "example": "Nach dem fetten Essen habe ich Magenschmerzen.",
+    "score": 1
+  },
+  {
+    "id": 33,
+    "de": "der Arm / die Hand / der Finger",
+    "fr": "le bras / la main / le doigt",
+    "type": "Nom (m/f/m)",
+    "example": "Er hat sich den rechten Arm gebrochen.",
+    "score": 1
+  },
+  {
+    "id": 34,
+    "de": "das Bein / der Fuß / das Knie",
+    "fr": "la jambe / le pied / le genou",
+    "type": "Nom (n/m/n)",
+    "example": "Nach dem Marathon tun mir die Beine weh.",
+    "score": 1
+  },
+  {
+    "id": 35,
+    "de": "die Blutuntersuchung / die Blutprobe",
+    "fr": "la prise de sang / l'analyse de sang",
+    "type": "Nom (f)",
+    "example": "Morgen Früh muss ich nüchtern zur Blutuntersuchung.",
+    "score": 1
+  },
+  {
+    "id": 36,
+    "de": "der Blutdruck messen",
+    "fr": "prendre la tension artérielle",
+    "type": "Expression",
+    "example": "Die Arzthelferin misst routinemäßig meinen Blutdruck.",
+    "score": 1
+  },
+  {
+    "id": 37,
+    "de": "sich erholen / gesunden",
+    "fr": "se rétablir / guérir / se remettre",
+    "type": "Verbe",
+    "example": "Gute Besserung! Erhol dich gut und ruhe dich aus.",
+    "score": 1
+  },
+  {
+    "id": 38,
+    "de": "die Gesundheit fördern",
+    "fr": "favoriser / promouvoir la santé",
+    "type": "Expression",
+    "example": "Eine ausgewogene Ernährung fördert die Gesundheit.",
+    "score": 1
+  },
+  {
+    "id": 39,
+    "de": "gesund leben",
+    "fr": "mener une vie saine",
+    "type": "Expression",
+    "example": "Wer gesund lebt, fühlt sich fit und ausgeglichen.",
+    "score": 1
+  },
+  {
+    "id": 40,
+    "de": "die ausgewogene Ernährung",
+    "fr": "l'alimentation équilibrée",
+    "type": "Nom (f)",
+    "example": "Eine ausgewogene Ernährung enthält viel Obst und Gemüse.",
+    "score": 1
+  },
+  {
+    "id": 41,
+    "de": "abnehmen / zunehmen",
+    "fr": "perdre du poids / prendre du poids",
+    "type": "Verbe séparable",
+    "example": "Durch regelmäßigen Sport hat er fünf Kilo abgenommen.",
+    "score": 1
+  },
+  {
+    "id": 42,
+    "de": "sich bewegen / die Bewegung",
+    "fr": "bouger / l'exercice physique",
+    "type": "Verbe réfléchi / Nom (f)",
+    "example": "Aureichend Bewegung ist wichtig für Herz und Kreislauf.",
+    "score": 1
+  },
+  {
+    "id": 43,
+    "de": "der Stress abbauen",
+    "fr": "réduire / évacuer le stress",
+    "type": "Expression",
+    "example": "Yoga und Spaziergänge helfen mir, Stress abzubauen.",
+    "score": 1
+  },
+  {
+    "id": 44,
+    "de": "die Entspannung / sich entspannen",
+    "fr": "la relaxation / se détendre",
+    "type": "Nom (f) / Verbe",
+    "example": "Am Wochenende brauche ich Zeit zur Entspannung.",
+    "score": 1
+  },
+  {
+    "id": 45,
+    "de": "der Schlafmangel / ausreichend schlafen",
+    "fr": "le manque de sommeil / dormir suffisamment",
+    "type": "Nom (m) / Expression",
+    "example": "Schlafmangel führt zu Konzentrationsproblemen.",
+    "score": 1
+  },
+  {
+    "id": 46,
+    "de": "das Wohlbefinden",
+    "fr": "le bien-être",
+    "type": "Nom (n)",
+    "example": "Sauna und Massage steigern das körperliche Wohlbefinden.",
+    "score": 1
+  },
+  {
+    "id": 47,
+    "de": "körperlich und geistig fit sein",
+    "fr": "être en forme physiquement et mentalement",
+    "type": "Expression",
+    "example": "Auch im Alter möchte ich körperlich und geistig fit bleiben.",
+    "score": 1
+  },
+  {
+    "id": 48,
+    "de": "das Übergewicht / das Untergewicht",
+    "fr": "le surpoids / le sous-poids (la maigreur)",
+    "type": "Nom (n)",
+    "example": "Starkes Übergewicht erhöht das Risiko für Krankheiten.",
+    "score": 1
+  },
+  {
+    "id": 49,
+    "de": "auf das Rauchen verzichten / mit dem Rauchen aufhören",
+    "fr": "arrêter de fumer",
+    "type": "Expression",
+    "example": "Er hat beschlossen, aus gesundheitlichen Gründen mit dem Rauchen aufzuhören.",
+    "score": 1
+  },
+  {
+    "id": 50,
+    "de": "die Vorsorgeuntersuchung",
+    "fr": "le bilan de santé préventif / le dépistage",
+    "type": "Nom (f)",
+    "example": "Gehen Sie regelmäßig zur Vorsorgeuntersuchung beim Arzt.",
     "score": 1
   }
 ]
