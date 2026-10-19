@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session de Flashcards | Allemand</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header nav-header">
+      <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Sommaire</a>
+      <h2 id="theme-title">Chargement...</h2>
+    </header>
+
+    <main class="flashcard-wrapper">
+      <div class="card-container" id="card-container">
+        <div class="card" id="flashcard">
+          <div class="card-face card-front">
+            <span class="card-type" id="card-type">Mot</span>
+            <div class="card-content">
+              <p class="de-text" id="de-text">...</p>
+              <p class="example-text" id="example-text"></p>
+            </div>
+            <button class="btn-audio" id="btn-audio" title="Écouter la prononciation">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <span class="hint-flip"><i class="fa-solid fa-rotate"></i> Cliquez pour retourner</span>
+          </div>
+
+          <div class="card-face card-back">
+            <span class="card-type">Traduction</span>
+            <div class="card-content">
+              <p class="fr-text" id="fr-text">...</p>
+            </div>
+            <span class="hint-flip"><i class="fa-solid fa-rotate"></i> Cliquez pour retourner</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rating-box">
+        <p>Évaluez votre niveau d'acquisition pour cette carte :</p>
+        <div class="rating-buttons">
+          <button class="btn-rank r1" onclick="rateCard(1)">1<br><small>Pas du tout</small></button>
+          <button class="btn-rank r2" onclick="rateCard(2)">2<br><small>Difficile</small></button>
+          <button class="btn-rank r3" onclick="rateCard(3)">3<br><small>Moyen</small></button>
+          <button class="btn-rank r4" onclick="rateCard(4)">4<br><small>Bien</small></button>
+          <button class="btn-rank r5" onclick="rateCard(5)">5<br><small>Acquis</small></button>
+        </div>
+      </div>
+
+      <div class="action-box">
+        <button class="btn-next" id="btn-next"><i class="fa-solid fa-forward"></i> Carte suivante</button>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let vocabulary = [];
+    let currentCard = null;
+    let fileName = "";
+
+    const urlParams = new URLSearchParams(window.location.search);
+    fileName = urlParams.get('theme') || 'b1 travail carriere.json';
+
+    // Nettoyer le nom pour l'affichage du titre (retirer l'extension .json)
+    const cleanTitle = fileName.replace('.json', '');
+    document.getElementById('theme-title').textContent = cleanTitle.toUpperCase();
+
+    async function loadThemeData() {
+      try {
+        const response = await fetch(`data/${fileName}`);
+        const defaultData = await response.json();
+        
+        // Clé de stockage unique basée sur le nom du fichier (sans espaces)
+        const storageKey = `flashcards_${fileName.replace(/\s+/g, '_')}`;
+        const savedData = localStorage.getItem(storageKey);
+
+        if (savedData) {
+          vocabulary = JSON.parse(savedData);
+        } else {
+          vocabulary = defaultData;
+          saveToLocalStorage(storageKey);
+        }
+
+        nextCard();
+      } catch (error) {
+        document.getElementById('de-text').textContent = "Erreur de chargement du fichier JSON.";
+        console.error("Erreur de chargement du thème :", error);
+      }
+    }
+
+    function saveToLocalStorage(storageKey) {
+      localStorage.setItem(storageKey, JSON.stringify(vocabulary));
+    }
+
+    function getRandomCard() {
+      if (vocabulary.length === 0) return null;
+      let pool = [];
+      vocabulary.forEach((item, index) => {
+        let weight = Math.max(1, 6 - (item.score || 1));
+        for (let i = 0; i < weight; i++) {
+          pool.push(index);
+        }
+      });
+      let randomIndex = pool[Math.floor(Math.random() * pool.length)];
+      return vocabulary[randomIndex];
+    }
+
+    function displayCard(card) {
+      if (!card) return;
+      currentCard = card;
+
+      const cardElem = document.getElementById('flashcard');
+      cardElem.classList.remove('flipped');
+
+      document.getElementById('card-type').textContent = card.type || 'Vocabulaire';
+      document.getElementById('de-text').textContent = card.de;
+      document.getElementById('example-text').textContent = card.example ? `Ex: "${card.example}"` : '';
+      document.getElementById('fr-text').textContent = card.fr;
+
+      document.querySelectorAll('.btn-rank').forEach(btn => btn.classList.remove('active'));
+      const score = card.score || 1;
+      const activeBtn = document.querySelector(`.btn-rank.r${score}`);
+      if (activeBtn) activeBtn.classList.add('active');
+    }
+
+    function nextCard() {
+      const card = getRandomCard();
+      displayCard(card);
+    }
+
+    function rateCard(score) {
+      if (!currentCard) return;
+      currentCard.score = score;
+      const storageKey = `flashcards_${fileName.replace(/\s+/g, '_')}`;
+      saveToLocalStorage(storageKey);
+      
+      document.querySelectorAll('.btn-rank').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.btn-rank.r${score}`).classList.add('active');
+
+      setTimeout(nextCard, 250);
+    }
+
+    document.getElementById('card-container').addEventListener('click', function(e) {
+      if (e.target.closest('#btn-audio')) return;
+      document.getElementById('flashcard').classList.toggle('flipped');
+    });
+
+    document.getElementById('btn-audio').addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (!currentCard) return;
+      const utterance = new SpeechSynthesisUtterance(currentCard.de);
+      utterance.lang = 'de-DE';
+      window.speechSynthesis.speak(utterance);
+    });
+
+    document.getElementById('btn-next').addEventListener('click', nextCard);
+
+    loadThemeData();
+  </script>
+</body>
+</html>
