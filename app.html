@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <header class="header nav-header">
-      <a href="index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Sommaire</a>
+      <a href="./index.html" class="btn-back"><i class="fa-solid fa-arrow-left"></i> Sommaire</a>
       <h2 id="theme-title">Chargement...</h2>
     </header>
 
@@ -22,7 +22,7 @@
             <span class="card-type" id="card-type">Mot</span>
             
             <div class="card-content">
-              <!-- Mot / Expression principales -->
+              <!-- Mot / Expression principale -->
               <div class="text-audio-row">
                 <p class="de-text" id="de-text">...</p>
                 <button class="btn-audio" id="btn-audio-word" title="Écouter le mot">
@@ -77,14 +77,15 @@
     let fileName = "";
 
     const urlParams = new URLSearchParams(window.location.search);
-    fileName = urlParams.get('theme') || 'b1 travail carriere.json';
+    const rawThemeParam = urlParams.get('theme') || 'b1 travail carriere.json';
+    fileName = decodeURIComponent(rawThemeParam);
 
     const cleanTitle = fileName.replace('.json', '');
     document.getElementById('theme-title').textContent = cleanTitle.toUpperCase();
 
     async function loadThemeData() {
       try {
-        const response = await fetch(`data/${fileName}`);
+        const response = await fetch(`data/${encodeURIComponent(fileName)}?v=` + Date.now());
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -112,7 +113,7 @@
     }
 
     function getRandomCard() {
-      if (vocabulary.length === 0) return null;
+      if (!vocabulary || vocabulary.length === 0) return null;
       let pool = [];
       vocabulary.forEach((item, index) => {
         let weight = Math.max(1, 6 - (item.score || 1));
